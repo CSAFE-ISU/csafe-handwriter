@@ -1,19 +1,26 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "handwriterWebsite"
+  title: "handwriter"
   navbar:
+    logo: "www/CSAFE_Tools_handwriter.png"
+    search: true
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: Home
+        file: index.qmd
+    right:
+      - icon: github
+        href: https://github.com/CSAFE-ISU/handwriter
+        aria-label: handwriter GitHub
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    css: csafe.css
     toc: true
+    toc-depth: 2
+    toc-location: left
 
 editor: visual
 
