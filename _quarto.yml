@@ -3,7 +3,6 @@ project:
   output-dir: docs
 
 website:
-  title: "handwriter"
   navbar:
     logo: "www/CSAFE_Tools_handwriter.png"
     search: true
@@ -17,7 +16,7 @@ website:
 
 format:
   html:
-    css: csafe.css
+    css: styles.css
     toc: true
     toc-depth: 2
     toc-location: left

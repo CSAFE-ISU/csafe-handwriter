@@ -26,5 +26,12 @@
     "title": "Welcome",
     "section": "Launch the App",
     "text": "Launch the App\nOpen RStudio, navigate to the console window, and type:\n\nlibrary(handwriterApp)\nlibrary(handwriterRF)\nhandwriterApp()\n\nIn the pop-up window, click Open in Browser. If you use the app in the pop-up window instead of in a browser, some links will not work."
+  },
+  {
+    "objectID": "index.html#choose-a-scenario",
+    "href": "index.html#choose-a-scenario",
+    "title": "Welcome",
+    "section": "Choose a Scenario",
+    "text": "Choose a Scenario\nHandwriter addresses two scenarios. Choose the option that best describes your handwriting:"
   }
 ]
