@@ -9,8 +9,22 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "handwriterWebsite",
+    "title": "Welcome",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Unlock the power of handwriting analysis with handwriter. This tool is designed to assist forensic examiners by analyzing handwritten documents. Whether you are a forensic document examiner, legal professional, academic, or simply curious about how statistics are applied to handwriting, handwriter provides an automated way to evaluate handwriting samples."
+  },
+  {
+    "objectID": "index.html#installation",
+    "href": "index.html#installation",
+    "title": "Welcome",
+    "section": "Installation",
+    "text": "Installation\nHandwriter requires R, RStudio IDE, and JAGS.\n\nInstall R and RStudio from POSIT\nInstall JAGS from SourceForge\n\nInstall the handwriterApp R package. Open RStudio and navigate to the console window and type\n\noptions(timeout = 100000)\ninstall.packages(\"devtools\")\ninstall.packages(\"CSAFE-ISU/handwriterApp\")\ndevtools::install_github(\"CSAFE-ISU/handwriterRF\")"
+  },
+  {
+    "objectID": "index.html#launch-the-app",
+    "href": "index.html#launch-the-app",
+    "title": "Welcome",
+    "section": "Launch the App",
+    "text": "Launch the App\nOpen RStudio, navigate to the console window, and type:\n\nlibrary(handwriterApp)\nlibrary(handwriterRF)\nhandwriterApp()\n\nIn the pop-up window, click Open in Browser. If you use the app in the pop-up window instead of in a browser, some links will not work."
   }
 ]

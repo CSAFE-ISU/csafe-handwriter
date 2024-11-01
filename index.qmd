@@ -1,11 +1,35 @@
 ---
-title: "handwriterWebsite"
+title: "Welcome"
 ---
 
-This is a Quarto website.
+Unlock the power of handwriting analysis with handwriter. This tool is designed to assist forensic examiners by analyzing handwritten documents. Whether you are a forensic document examiner, legal professional, academic, or simply curious about how statistics are applied to handwriting, handwriter provides an automated way to evaluate handwriting samples.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+# Quick Start
 
-```{r}
-1 + 1
+## Installation
+
+Handwriter requires R, RStudio IDE, and JAGS.
+
+-   Install R and RStudio from [POSIT](https://posit.co/download/rstudio-desktop/)
+-   Install JAGS from [SourceForge](https://sourceforge.net/projects/mcmc-jags/files/)
+
+Install the handwriterApp R package. Open RStudio and navigate to the console window and type
+
+```{r, eval=FALSE}
+options(timeout = 100000)
+install.packages("devtools")
+install.packages("CSAFE-ISU/handwriterApp")
+devtools::install_github("CSAFE-ISU/handwriterRF")
 ```
+
+## Launch the App
+
+Open RStudio, navigate to the console window, and type:
+
+```{r, eval = FALSE}
+library(handwriterApp)
+library(handwriterRF)
+handwriterApp()
+```
+
+In the pop-up window, click **Open in Browser**. If you use the app in the pop-up window instead of in a browser, some links will not work.
