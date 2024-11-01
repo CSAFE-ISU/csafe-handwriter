@@ -18,16 +18,30 @@
 .navbar {
   background-color: white !important;
   padding-left: 10px;
+  padding-bottom: 0px;
   margin-bottom: 0px;
   height: 70px;
   display: flex;
   align-items: flex-end;
 }
 
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-sm,
+.navbar > .container-md,
+.navbar > .container-lg,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  display: flex;
+  flex-wrap: inherit;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 /* Inactive tab color */
 .navbar-nav .nav-link {
     color: var(--lt-grey); /* Color for inactive links */
-    display: flex;
+    padding: 0;
 }
 
 /* Active tab color */

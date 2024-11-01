@@ -9,6 +9,8 @@ website:
     left:
       - text: Home
         file: index.qmd
+      - text: Contact
+        file: contact.qmd
     right:
       - icon: github
         href: https://github.com/CSAFE-ISU/handwriter

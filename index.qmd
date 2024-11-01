@@ -34,10 +34,6 @@ handwriterApp()
 
 In the pop-up window, click **Open in Browser**. If you use the app in the pop-up window instead of in a browser, some links will not work.
 
-
 ## Choose a Scenario
 
 Handwriter addresses two scenarios. Choose the option that best describes your handwriting:
-
-
-
