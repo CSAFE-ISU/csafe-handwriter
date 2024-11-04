@@ -24,7 +24,7 @@ devtools::install_github("CSAFE-ISU/handwriterRF")
 
 ## Handwriting Samples
 
-Scan your handwriting samples at 300 DPI and save them as PNG files. 
+Scan your handwriting samples at 300 DPI and save them as PNG files. If you don't have your own handwriting samples, you can download samples for free from the [CSAFE Handwriting Database](https://forensicstats.org/handwritingdatabase/).
 
 ## Launch the App
 

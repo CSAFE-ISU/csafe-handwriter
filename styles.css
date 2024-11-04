@@ -6,6 +6,7 @@
   --purple: #981E97;
   --dk-grey: #545859;
   --lt-grey: #ddd;
+  --orange: #F68D2E;
 }
 
 /* Increase the navbar logo size */
@@ -117,6 +118,7 @@ h6, .h6 {
   font-size: 1rem;
 }
 
+/* Table of contents in sidebar */
 .sidebar nav[role="doc-toc"] ul > li > a:hover,
 .sidebar nav[role="doc-toc"] ul > li > ul > li > a:hover {
   color: var(--bs-gray-dark) !important;
@@ -133,6 +135,26 @@ h6, .h6 {
     border-left-color: var(--bs-gray-dark);
 }
 
+/* Unvisited link */
+a:link {
+    color: var(--purple); /* Change to your desired color */
+}
+
+/* Visited link */
+a:visited {
+    color: var(--orange); /* Change to your desired color */
+}
+
+/* Mouse over link */
+a:hover {
+    color: var(--oragne); /* Change to your desired color */
+}
+
+/* Selected link */
+a:active {
+    color: var(--orange); /* Change to your desired color */
+}
+
 /* Body */
 body {
   font-family: 'Montserrat', sans-serif;
@@ -146,6 +168,7 @@ body {
     box-sizing: border-box;
 }
 
+/* Scenario Cards */
 .twocards {
   display: flex;
   flex-direction: row;
@@ -166,9 +189,6 @@ body {
   margin-right: 14px;
   margin-bottom: 4px;
   margin-top: 24px;
-  /*   line-height: 20px !important;
-  font-size: 18px !important;
-  font-weight: 500 !important; */
 }
 
 .card:hover {
