@@ -37,3 +37,64 @@ In the pop-up window, click **Open in Browser**. If you use the app in the pop-u
 ## Choose a Scenario
 
 Handwriter addresses two scenarios. Choose the option that best describes your handwriting:
+
+```{=html}
+<div class="twocards">
+
+<div class="card">
+  <div class="container">
+    <h3>SCENARIO 1</h3>
+    <p>
+    <i>Compare a questioned document to another handwritten document.</i>
+    </p>
+    
+    <hr>
+    
+    <p>
+    <b>Requirements</b>
+      <ul>
+        <li>
+        <b>Questioned Document:</b> from an unknown writer.
+        </li>
+        <li>
+        <b>Comparison Document:</b> from a known or unknown writer.
+        </li>
+      </ul>
+    </p>
+    
+    <p>
+    <b>Result:</b> A score-based likelihood ratio that expresses the support of the evidence in favor of the samples having been written by the same writer or different writers.
+    </p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="container">
+    <h3>SCENARIO 2</h3>
+    
+    <p>
+    <i>Compare a questioned document to a group of known handwriting samples.</i>
+    </p>
+    
+    <hr>
+    
+    <p>
+    <b>Requirements</b>
+      <ul>
+        <li>
+        <b>Questioned Document:</b> from an unknown writer.
+        </li>
+        <li>
+        <b>Additional Documents:</b> Three known writing samples from each writer in a group of potential writers. The questioned document MUST have been written by someone in this group.
+        </li>
+      </ul>
+    </p>
+    
+    <p>
+    <b>Result:</b> The posterior probability that each potential writer wrote the questioned document.
+    </p>
+  </div>
+</div>
+
+</div>
+```

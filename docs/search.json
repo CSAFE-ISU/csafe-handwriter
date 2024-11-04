@@ -32,6 +32,6 @@
     "href": "index.html#choose-a-scenario",
     "title": "Welcome",
     "section": "Choose a Scenario",
-    "text": "Choose a Scenario\nHandwriter addresses two scenarios. Choose the option that best describes your handwriting:"
+    "text": "Choose a Scenario\nHandwriter addresses two scenarios. Choose the option that best describes your handwriting:\n\n\n\n  \n    SCENARIO 1\n    Compare a questioned document to another handwritten document.\n    \n    \n    Requirements\n      \n        \n        Questioned Document: from an unknown writer.\n        \n        \n        Comparison Document: from a known or unknown writer.\n        \n      \n    \n    \n    Result: A score-based likelihood ratio that expresses the support of the evidence in favor of the samples having been written by the same writer or different writers.\n    \n  \n\n\n\n  \n    SCENARIO 2\n    \n    Compare a questioned document to a group of known handwriting samples.\n    \n    \n    \n    Requirements\n      \n        \n        Questioned Document: from an unknown writer.\n        \n        \n        Additional Documents: Three known writing samples from each writer in a group of potential writers. The questioned document MUST have been written by someone in this group.\n        \n      \n    \n    \n    Result: The posterior probability that each potential writer wrote the questioned document."
   }
 ]
