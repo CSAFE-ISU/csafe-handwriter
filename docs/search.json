@@ -21,6 +21,13 @@
     "text": "Installation\nHandwriter requires R, RStudio IDE, and JAGS.\n\nInstall R and RStudio from POSIT\nInstall JAGS from SourceForge\n\nInstall the handwriterApp R package. Open RStudio and navigate to the console window and type\n\noptions(timeout = 100000)\ninstall.packages(\"devtools\")\ninstall.packages(\"CSAFE-ISU/handwriterApp\")\ndevtools::install_github(\"CSAFE-ISU/handwriterRF\")"
   },
   {
+    "objectID": "index.html#handwriting-samples",
+    "href": "index.html#handwriting-samples",
+    "title": "Welcome",
+    "section": "Handwriting Samples",
+    "text": "Handwriting Samples\nScan your handwriting samples at 300 DPI and save them as PNG files."
+  },
+  {
     "objectID": "index.html#launch-the-app",
     "href": "index.html#launch-the-app",
     "title": "Welcome",
@@ -32,6 +39,6 @@
     "href": "index.html#choose-a-scenario",
     "title": "Welcome",
     "section": "Choose a Scenario",
-    "text": "Choose a Scenario\nHandwriter addresses two scenarios. Choose the option that best describes your handwriting:\n\n\n\n  \n    SCENARIO 1\n    Compare a questioned document to another handwritten document.\n    \n    \n    Requirements\n      \n        \n        Questioned Document: from an unknown writer.\n        \n        \n        Comparison Document: from a known or unknown writer.\n        \n      \n    \n    \n    Result: A score-based likelihood ratio that expresses the support of the evidence in favor of the samples having been written by the same writer or different writers.\n    \n  \n\n\n\n  \n    SCENARIO 2\n    \n    Compare a questioned document to a group of known handwriting samples.\n    \n    \n    \n    Requirements\n      \n        \n        Questioned Document: from an unknown writer.\n        \n        \n        Additional Documents: Three known writing samples from each writer in a group of potential writers. The questioned document MUST have been written by someone in this group.\n        \n      \n    \n    \n    Result: The posterior probability that each potential writer wrote the questioned document."
+    "text": "Choose a Scenario\nHandwriter addresses two scenarios.\n\n\n\n  \n    SCENARIO 1\n    \n    Compare a questioned document to a single handwritten document.\n    \n    \n    \n    \n    \n    \n    Requirements\n      \n        \n        Questioned Document: from an unknown writer.\n        \n        \n        Comparison Document: from a known or unknown writer.\n        \n      \n    \n    \n    \n    Result: A score-based likelihood ratio that expresses the support of the evidence in favor of the samples having been written by the same writer or different writers.\n    \n  \n\n\n\n  \n    SCENARIO 2\n    \n    \n    Compare a questioned document to a group of known handwriting samples.\n    \n    \n    \n    \n    \n    Requirements\n      \n        \n        Questioned Document: from an unknown writer.\n        \n        \n        Additional Documents: Three known writing samples from each writer in a group of potential writers. The questioned document MUST have been written by someone in this group.\n        \n      \n    \n    \n    \n    Result: The posterior probability that each potential writer wrote the questioned document.\n    \n    \n  \n\n\n\nIn the app, choose the scenario that fits your handwriting samples by clicking the scenario’s button. Follow the instructions to analyze your handwriting samples."
   }
 ]

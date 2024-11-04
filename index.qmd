@@ -22,6 +22,10 @@ install.packages("CSAFE-ISU/handwriterApp")
 devtools::install_github("CSAFE-ISU/handwriterRF")
 ```
 
+## Handwriting Samples
+
+Scan your handwriting samples at 300 DPI and save them as PNG files. 
+
 ## Launch the App
 
 Open RStudio, navigate to the console window, and type:
@@ -36,7 +40,7 @@ In the pop-up window, click **Open in Browser**. If you use the app in the pop-u
 
 ## Choose a Scenario
 
-Handwriter addresses two scenarios. Choose the option that best describes your handwriting:
+Handwriter addresses two scenarios. 
 
 ```{=html}
 <div class="twocards">
@@ -45,8 +49,9 @@ Handwriter addresses two scenarios. Choose the option that best describes your h
   <div class="container">
     <h3>SCENARIO 1</h3>
     <p>
-    <i>Compare a questioned document to another handwritten document.</i>
+    <i>Compare a questioned document to a single handwritten document.</i>
     </p>
+    <br>
     
     <hr>
     
@@ -93,8 +98,12 @@ Handwriter addresses two scenarios. Choose the option that best describes your h
     <p>
     <b>Result:</b> The posterior probability that each potential writer wrote the questioned document.
     </p>
+    <br>
   </div>
 </div>
 
 </div>
 ```
+
+In the app, choose the scenario that fits your handwriting samples by clicking the scenario's button. Follow the instructions to analyze your handwriting samples.
+
