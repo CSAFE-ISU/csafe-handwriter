@@ -193,18 +193,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Quick Start</h1>
 <section id="installation" class="level2">
 <h2 class="anchored" data-anchor-id="installation">Installation</h2>
+<section id="install-software" class="level3">
+<h3 class="anchored" data-anchor-id="install-software">Install Software</h3>
 <p>Handwriter requires R, RStudio IDE, and JAGS.</p>
 <ul>
 <li>Install R and RStudio from <a href="https://posit.co/download/rstudio-desktop/">POSIT</a></li>
 <li>Install JAGS from <a href="https://sourceforge.net/projects/mcmc-jags/files/">SourceForge</a></li>
+<li>Windows only:
+<ul>
+<li>If you have a 64-bit Intel machine install RTools from the <a href="https://cran.r-project.org/bin/windows/Rtools/rtools44/files/rtools44-6335-6327.exe">RTools44 installer</a></li>
+<li>If you have a 64-bit ARM machine install RTools from the <a href="https://cran.r-project.org/bin/windows/Rtools/rtools44/files/rtools44-aarch64-6335-6327.exe">RTools44 ARM installer</a></li>
+</ul></li>
 </ul>
+</section>
+<section id="install-r-packages" class="level3">
+<h3 class="anchored" data-anchor-id="install-r-packages">Install R Packages</h3>
 <p>Install the handwriterApp R package. Open RStudio and navigate to the console window and type</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">timeout =</span> <span class="dv">100000</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"devtools"</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"CSAFE-ISU/handwriterApp"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"CSAFE-ISU/handwriterApp"</span>)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"CSAFE-ISU/handwriterRF"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
 </section>
 <section id="handwriting-samples" class="level2">
 <h2 class="anchored" data-anchor-id="handwriting-samples">Handwriting Samples</h2>
