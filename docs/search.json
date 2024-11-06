@@ -18,7 +18,7 @@
     "href": "index.html#installation",
     "title": "Welcome",
     "section": "Installation",
-    "text": "Installation\nHandwriter requires R, RStudio IDE, and JAGS.\n\nInstall R and RStudio from POSIT\nInstall JAGS from SourceForge\n\nInstall the handwriterApp R package. Open RStudio and navigate to the console window and type\n\noptions(timeout = 100000)\ninstall.packages(\"devtools\")\ninstall.packages(\"CSAFE-ISU/handwriterApp\")\ndevtools::install_github(\"CSAFE-ISU/handwriterRF\")"
+    "text": "Installation\n\nInstall Software\nHandwriter requires R, RStudio IDE, and JAGS.\n\nInstall R and RStudio from POSIT\nInstall JAGS from SourceForge\nWindows only:\n\nIf you have a 64-bit Intel machine install RTools from the RTools44 installer\nIf you have a 64-bit ARM machine install RTools from the RTools44 ARM installer\n\n\n\n\nInstall R Packages\nInstall the handwriterApp R package. Open RStudio and navigate to the console window and type\n\noptions(timeout = 100000)\ninstall.packages(\"devtools\")\ndevtools::install_github(\"CSAFE-ISU/handwriterApp\")\ndevtools::install_github(\"CSAFE-ISU/handwriterRF\")"
   },
   {
     "objectID": "index.html#handwriting-samples",
