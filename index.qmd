@@ -25,9 +25,17 @@ Install the handwriterApp R package. Open RStudio and navigate to the console wi
 ```{r, eval=FALSE}
 options(timeout = 100000)
 install.packages("devtools")
+devtools::install_github("CSAFE-ISU/handwriter")
 devtools::install_github("CSAFE-ISU/handwriterApp")
 devtools::install_github("CSAFE-ISU/handwriterRF")
 ```
+
+You might encounter the following message.
+
+![](www/install_packages.png)
+
+Handwriter uses other R packages. This message asks whether to install the newest versions of the Rcpp, mvtnorm, and curl packages. You will likely see different R packages listed. Type "1" without the quotation marks and hit enter to install all updates.
+
 
 ## Handwriting Samples
 
