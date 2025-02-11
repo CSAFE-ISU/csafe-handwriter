@@ -11,37 +11,6 @@
  --orange: #F68D2E;
 }
 
-/* Remove any default margins/padding from body */
-body {
- margin: 0;
- padding: 0;
- font-family: 'Montserrat', sans-serif;
- font-weight: 500;
- font-size: 16px;
- color: var(--md-gray);
-}
-
-/* Content width and spacing */
-.quarto-container {
- max-width: 1200px;
- margin: 0 auto;
- padding-left: 1rem;
- padding-right: 1rem;
-}
-
-@media (max-width: 768px) {
- .quarto-container {
-   padding-left: 0.5rem;
-   padding-right: 0.5rem;
- }
-}
-
-main {
- margin-top: 0.5rem;
- padding-left: 0.5rem;
- padding-right: 1rem;
-}
-
 /* Header and navbar base */
 #quarto-header {
  background-color: transparent;
@@ -100,7 +69,7 @@ main {
 
 /* Navigation links styling */
 .navbar-nav {
- padding-left: 2rem;
+ padding-left: 2.5rem;
  gap: 1.5rem;
 }
 
@@ -125,6 +94,36 @@ main {
  color: white !important;
 }
 
+/* Content width and spacing */
+.quarto-container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding-left: 1rem;
+ padding-right: 1rem;
+}
+
+@media (max-width: 768px) {
+ .quarto-container {
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+ }
+}
+
+body {
+ margin: 0;
+ padding: 0;
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 500;
+ font-size: 16px;
+ color: var(--md-gray);
+}
+
+main {
+ margin-top: 0.5rem;
+ padding-left: 0.5rem;
+ padding-right: 1rem;
+}
+
 /* Typography */
 hr {
  margin: 1rem 0;
@@ -139,7 +138,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
  margin-bottom: 0.5rem;
  font-weight: 400;
  line-height: 1.2;
- color: var(--purple);
+ color: var(--blue);
 }
 
 h1, .h1 {
@@ -192,18 +191,18 @@ h6, .h6 {
 /* Table of contents */
 .sidebar nav[role="doc-toc"] ul > li > a:hover,
 .sidebar nav[role="doc-toc"] ul > li > ul > li > a:hover {
- color: var(--purple) !important;
+ color: var(--blue) !important;
  font-weight: bold;
 }
 .sidebar nav[role="doc-toc"] ul > li > a.focus,
 .sidebar nav[role="doc-toc"] ul > li > ul > li > a.focus,
 .sidebar nav[role="doc-toc"] ul > li > a.active, 
 .sidebar nav[role="doc-toc"] ul > li > ul > li > a.active {
- color: var(--purple) !important;
+ color: var(--blue) !important;
  font-weight: bold;
  border-left-width: 1px;
  border-left-style: solid;
- border-left-color: var(--purple);
+ border-left-color: var(--blue);
 }
 
 /* Links */
