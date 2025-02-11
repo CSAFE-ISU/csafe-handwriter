@@ -1,6 +1,7 @@
 ---
 title: "Articles"
 toc: FALSE
+code-tools: FALSE
 ---
 
 -   [The SLR Method](articles/introduction-to-slr-model.qmd)
