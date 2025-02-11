@@ -25,7 +25,7 @@ format:
     css: styles.css
     toc: true
     toc-depth: 2
-    toc-location: left
+    toc-location: right
     code-fold: true
     code-tools: true
     code-summary: "Show code"

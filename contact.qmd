@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+toc: FALSE
 ---
 
 ##### Center for Statistics and Applications in Forensic Evidence
@@ -12,4 +13,4 @@ Ames, Iowa 50011
 
 \(515\) 294-7278
 
-<csafe@iastate.edu>
+[csafe\@iastate.edu](mailto:csafe@iastate.edu){.email}

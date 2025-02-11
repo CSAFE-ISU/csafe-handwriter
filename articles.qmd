@@ -1,3 +1,6 @@
-# Articles
+---
+title: "Contact"
+toc: FALSE
+---
 
 -   [The SLR Method](articles/introduction-to-slr-model.qmd)
