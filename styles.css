@@ -8,7 +8,8 @@
  --dk-gray: #343a40;
  --md-gray: #545859;
  --lt-gray: #ddd;
- --orange: #F68D2E;
+ --orange: #F58870;
+ --dk-orange: #F68D2E;
 }
 
 /* Header and navbar base */
@@ -207,21 +208,21 @@ h6, .h6 {
 
 /* Links */
 a:link {
- color: var(--purple);
+ color: var(--orange);
 }
 
 a:visited {
- color: var(--lt-purple);
+ color: var(--dk-orange);
  font-weight: normal;
 }
 
 a:hover {
- color: var(--lt-purple);
+ color: var(--dk-orange);
  font-weight: normal;
 }
 
 a:active {
- color: var(--lt-purple);
+ color: var(--dk-orange);
  font-weight: normal;
 }
 
