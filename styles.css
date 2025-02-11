@@ -11,10 +11,30 @@
   --orange: #F68D2E;
 }
 
-/* Increase the navbar logo size */
+/* Content width and spacing */
+.quarto-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 768px) {
+  .quarto-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+main {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Navbar styling */
 .navbar-brand img {
-    max-height: 50px; /* Increase the max width as needed */
-    width: auto;     /* Maintain aspect ratio */
+    max-height: 50px;
+    width: auto;
     vertical-align: middle;
 }
 
@@ -41,24 +61,24 @@
   align-items: flex-end;
 }
 
-/* Inactive tab color */
+/* Navigation links */
 .navbar-nav .nav-link {
-    color: var(--md-gray); /* Color for inactive links */
+    color: var(--md-gray);
     padding: 0;
 }
 
-/* Active tab color */
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-  color: var(--dk-gray); /* Color for active links */
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.show {
+  color: var(--dk-gray);
   font-weight: bold;
 }
 
-/* Hover tab color */
 .navbar-nav .nav-link:hover {
-    color: var(--dk-gray); /* Color on hover */
+    color: var(--dk-gray);
     font-weight: bold;
 }
 
+/* Typography */
 hr {
   margin: 1rem 0;
   color: var(--md-gray);
@@ -122,7 +142,7 @@ h6, .h6 {
   font-size: 1rem;
 }
 
-/* Table of contents in sidebar */
+/* Table of contents */
 .sidebar nav[role="doc-toc"] ul > li > a:hover,
 .sidebar nav[role="doc-toc"] ul > li > ul > li > a:hover {
   color: var(--purple) !important;
@@ -139,26 +159,23 @@ h6, .h6 {
     border-left-color: var(--purple);
 }
 
-/* Unvisited link */
+/* Links */
 a:link {
-    color: var(--purple); /* Change to your desired color */
+    color: var(--purple);
 }
 
-/* Visited link */
 a:visited {
-    color: var(--lt-purple); /* Change to your desired color */
+    color: var(--lt-purple);
     font-weight: normal;
 }
 
-/* Mouse over link */
 a:hover {
-    color: var(--lt-purple); /* Change to your desired color */
+    color: var(--lt-purple);
     font-weight: normal;
 }
 
-/* Selected link */
 a:active {
-    color: var(--lt-purple); /* Change to your desired color */
+    color: var(--lt-purple);
     font-weight: normal;
 }
 
@@ -169,7 +186,6 @@ body {
   font-size: 16px;
   color: var(--md-gray);
 }
-
 
 *, ::after, ::before {
     box-sizing: border-box;
