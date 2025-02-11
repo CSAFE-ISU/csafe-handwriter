@@ -9,6 +9,10 @@ website:
     left:
       - text: Home
         file: index.qmd
+      - text: "Quick Start Guide"
+        file: quick-start-guide.qmd
+      - text: "Articles"
+        file: articles.qmd
       - text: Contact
         file: contact.qmd
     right:
@@ -22,6 +26,12 @@ format:
     toc: true
     toc-depth: 2
     toc-location: left
+    code-fold: true
+    code-tools: true
+    code-summary: "Show code"
+    code-overflow: wrap
+    fig-width: 7
+    fig-height: 5
 
 editor: visual
 

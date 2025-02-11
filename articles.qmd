@@ -1,0 +1,3 @@
+# Articles
+
+-   [The SLR Method](articles/introduction-to-slr-model.qmd)
