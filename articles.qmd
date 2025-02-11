@@ -4,4 +4,5 @@ toc: FALSE
 code-tools: FALSE
 ---
 
--   [The SLR Method](articles/introduction-to-slr-model.qmd)
+-   [An Intro to the SLR Method](articles/introduction-to-slr-model.qmd)
+-   [Train a New SLR Model](articles/training-slr-model.qmd)
