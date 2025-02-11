@@ -13,6 +13,8 @@ website:
         file: quick-start-guide.qmd
       - text: "Articles"
         file: articles.qmd
+      - text: "Permitted Use"
+        file: permitted-use.qmd
       - text: Contact
         file: contact.qmd
     right:

@@ -1,0 +1,51 @@
+---
+title: "Permitted Use of CSAFE’s handwriter Software"
+---
+
+### Effective Date: September 30, 2024
+
+------------------------------------------------------------------------
+
+## Overview
+
+This document outlines permitted uses of the Center for Statistics and Applications in Forensic Evidence’s handwriter software. The software is currently undergoing testing and may be used in research and additional testing within forensic labs. The software is not yet validated for casework or as admissible evidence in court.
+
+## Permitted Uses
+
+-   **Research:** Use the software for academic or scientific research related to forensic handwriting analysis.
+
+-   **Testing:** Use the software for internal testing within forensic labs to evaluate its performance.
+
+## Discouraged Uses
+
+-   **Casework:** The statistical model implemented by this software has not yet been applied to the full range or writing samples that could be encountered in casework or investigations. Therefore, we have not identified the conditions under which the approach can be expected to provide accurate and reliable results.
+
+-   **Court Testimony:** The statistical model implemented by this software has not yet undergone a robust validation study; accuracy metrics, like false-positive and false-negative error rates, have not been established.
+
+## User Responsibilities
+
+Users should:
+
+-   Follow the permitted use guidelines.
+
+-   Treat findings as preliminary and unsuitable for formal conclusions.
+
+## Disclaimer
+
+The software is in testing and not fully validated. CSAFE is not liable for its accuracy or reliability.
+
+## Contact Information
+
+For questions, contact:
+
+**Center for Statistics and Applications in Forensic Evidence**
+
+195 Durham Center
+
+613 Morrill Road
+
+Ames, Iowa 50011
+
+\(515\) 294-7278
+
+[csafe\@iastate.edu](mailto:csafe@iastate.edu){.email}

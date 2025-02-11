@@ -1,10 +1,129 @@
 [
   {
-    "objectID": "articles.html",
-    "href": "articles.html",
-    "title": "Articles",
+    "objectID": "permitted-use.html#overview",
+    "href": "permitted-use.html#overview",
+    "title": "Permitted Use of CSAFE’s handwriter Software",
+    "section": "Overview",
+    "text": "Overview\nThis document outlines permitted uses of the Center for Statistics and Applications in Forensic Evidence’s handwriter software. The software is currently undergoing testing and may be used in research and additional testing within forensic labs. The software is not yet validated for casework or as admissible evidence in court."
+  },
+  {
+    "objectID": "permitted-use.html#permitted-uses",
+    "href": "permitted-use.html#permitted-uses",
+    "title": "Permitted Use of CSAFE’s handwriter Software",
+    "section": "Permitted Uses",
+    "text": "Permitted Uses\n\nResearch: Use the software for academic or scientific research related to forensic handwriting analysis.\nTesting: Use the software for internal testing within forensic labs to evaluate its performance."
+  },
+  {
+    "objectID": "permitted-use.html#discouraged-uses",
+    "href": "permitted-use.html#discouraged-uses",
+    "title": "Permitted Use of CSAFE’s handwriter Software",
+    "section": "Discouraged Uses",
+    "text": "Discouraged Uses\n\nCasework: The statistical model implemented by this software has not yet been applied to the full range or writing samples that could be encountered in casework or investigations. Therefore, we have not identified the conditions under which the approach can be expected to provide accurate and reliable results.\nCourt Testimony: The statistical model implemented by this software has not yet undergone a robust validation study; accuracy metrics, like false-positive and false-negative error rates, have not been established."
+  },
+  {
+    "objectID": "permitted-use.html#user-responsibilities",
+    "href": "permitted-use.html#user-responsibilities",
+    "title": "Permitted Use of CSAFE’s handwriter Software",
+    "section": "User Responsibilities",
+    "text": "User Responsibilities\nUsers should:\n\nFollow the permitted use guidelines.\nTreat findings as preliminary and unsuitable for formal conclusions."
+  },
+  {
+    "objectID": "permitted-use.html#disclaimer",
+    "href": "permitted-use.html#disclaimer",
+    "title": "Permitted Use of CSAFE’s handwriter Software",
+    "section": "Disclaimer",
+    "text": "Disclaimer\nThe software is in testing and not fully validated. CSAFE is not liable for its accuracy or reliability."
+  },
+  {
+    "objectID": "permitted-use.html#contact-information",
+    "href": "permitted-use.html#contact-information",
+    "title": "Permitted Use of CSAFE’s handwriter Software",
+    "section": "Contact Information",
+    "text": "Contact Information\nFor questions, contact:\nCenter for Statistics and Applications in Forensic Evidence\n195 Durham Center\n613 Morrill Road\nAmes, Iowa 50011\n(515) 294-7278\ncsafe@iastate.edu"
+  },
+  {
+    "objectID": "quick-start-guide.html",
+    "href": "quick-start-guide.html",
+    "title": "Quick Start Guide",
     "section": "",
-    "text": "An Intro to the SLR Method\nTrain a New SLR Model"
+    "text": "Handwriter requires R, RStudio IDE, and JAGS.\n\nInstall R and RStudio from POSIT\nInstall JAGS from SourceForge\nWindows only:\n\nIf you have a 64-bit Intel machine install RTools from the RTools44 installer\nIf you have a 64-bit ARM machine install RTools from the RTools44 ARM installer\n\n\n\n\n\nInstall the handwriterApp R package. Open RStudio and navigate to the console window and type\n\n\nShow code\ninstall.packages(\"handwriter\")\ninstall.packages(\"handwriterRF\")\ninstall.packages(\"handwriterApp\")\n\n\nYou might encounter the following message.\n\nHandwriter uses other R packages. This message asks whether to install the newest versions of the Rcpp, mvtnorm, and curl packages. You will likely see different R packages listed. Type “1” without the quotation marks and hit enter to install all updates."
+  },
+  {
+    "objectID": "quick-start-guide.html#installation",
+    "href": "quick-start-guide.html#installation",
+    "title": "Quick Start Guide",
+    "section": "",
+    "text": "Handwriter requires R, RStudio IDE, and JAGS.\n\nInstall R and RStudio from POSIT\nInstall JAGS from SourceForge\nWindows only:\n\nIf you have a 64-bit Intel machine install RTools from the RTools44 installer\nIf you have a 64-bit ARM machine install RTools from the RTools44 ARM installer\n\n\n\n\n\nInstall the handwriterApp R package. Open RStudio and navigate to the console window and type\n\n\nShow code\ninstall.packages(\"handwriter\")\ninstall.packages(\"handwriterRF\")\ninstall.packages(\"handwriterApp\")\n\n\nYou might encounter the following message.\n\nHandwriter uses other R packages. This message asks whether to install the newest versions of the Rcpp, mvtnorm, and curl packages. You will likely see different R packages listed. Type “1” without the quotation marks and hit enter to install all updates."
+  },
+  {
+    "objectID": "quick-start-guide.html#handwriting-samples",
+    "href": "quick-start-guide.html#handwriting-samples",
+    "title": "Quick Start Guide",
+    "section": "Handwriting Samples",
+    "text": "Handwriting Samples\nScan your handwriting samples at 300 DPI and save them as PNG files. If you don’t have your own handwriting samples, you can download samples for free from the CSAFE Handwriting Database."
+  },
+  {
+    "objectID": "quick-start-guide.html#launch-the-app",
+    "href": "quick-start-guide.html#launch-the-app",
+    "title": "Quick Start Guide",
+    "section": "Launch the App",
+    "text": "Launch the App\nOpen RStudio, navigate to the console window, and type:\n\n\nShow code\nlibrary(handwriterApp)\nlibrary(handwriterRF)\nhandwriterApp()\n\n\nIn the pop-up window, click Open in Browser. If you use the app in the pop-up window instead of in a browser, some links will not work."
+  },
+  {
+    "objectID": "quick-start-guide.html#choose-a-scenario",
+    "href": "quick-start-guide.html#choose-a-scenario",
+    "title": "Quick Start Guide",
+    "section": "Choose a Scenario",
+    "text": "Choose a Scenario\nHandwriter addresses two scenarios.\n\n\n\n  \n    SCENARIO 1\n    \n    Compare a questioned document to a single handwritten document.\n    \n    \n    \n    \n    \n    \n    Requirements\n      \n        \n        Questioned Document: from an unknown writer.\n        \n        \n        Comparison Document: from a known or unknown writer.\n        \n      \n    \n    \n    \n    Result: A score-based likelihood ratio that expresses the support of the evidence in favor of the samples having been written by the same writer or different writers.\n    \n  \n\n\n\n  \n    SCENARIO 2\n    \n    \n    Compare a questioned document to a group of known handwriting samples.\n    \n    \n    \n    \n    \n    Requirements\n      \n        \n        Questioned Document: from an unknown writer.\n        \n        \n        Additional Documents: Three known writing samples from each writer in a group of potential writers. The questioned document MUST have been written by someone in this group.\n        \n      \n    \n    \n    \n    Result: The posterior probability that each potential writer wrote the questioned document.\n    \n    \n  \n\n\n\nIn the app, choose the scenario that fits your handwriting samples by clicking the scenario’s button. Follow the instructions to analyze your handwriting samples."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Unlock the power of handwriting analysis with handwriter. This tool is designed to assist forensic examiners by analyzing handwritten documents. Whether you are a forensic document examiner, legal professional, academic, or simply curious about how statistics are applied to handwriting, handwriter provides an automated way to evaluate handwriting samples."
+  },
+  {
+    "objectID": "articles/training-slr-model.html",
+    "href": "articles/training-slr-model.html",
+    "title": "Train a New SLR Model",
+    "section": "",
+    "text": "HandwriterRF has a pre-trained random forest and set of reference similarity scores that are the default for compare_documents() and compare_writer_profiles(). This tutorial shows you how to train your own random forest and create your own set of reference scores to use with these functions."
+  },
+  {
+    "objectID": "articles/training-slr-model.html#training-data",
+    "href": "articles/training-slr-model.html#training-data",
+    "title": "Train a New SLR Model",
+    "section": "Training Data",
+    "text": "Training Data\nYou need scanned handwriting samples saved as PNG images for training the random forest and making reference scores. The training set must include at least two samples from each writer so that the random forest can see examples of documents written by the same writer and examples of documents written by different writers.\nThe CSAFE Handwriting Database contains suitable handwriting samples that you may download for free if you don’t have your own samples."
+  },
+  {
+    "objectID": "articles/training-slr-model.html#train-a-random-forest",
+    "href": "articles/training-slr-model.html#train-a-random-forest",
+    "title": "Train a New SLR Model",
+    "section": "Train a Random Forest",
+    "text": "Train a Random Forest\n\nEstimate Writer Profiles\nPlace handwriting samples that you will use to train a random forest in a folder. The first step is to estimate a writer profile from each handwriting sample. We do this with handwriter::get_writer_profiles(). Behind the scenes, handwriter::get_writer_profiles() performs the following steps for each sample:\n\nSplits the handwriting into component shapes, called graphs, with handwriter::processDocument().\nThe graphs are sorted into clusters of similar shapes using a cluster template created with handwriter::make_clustering_template(). By default, handwriter::get_writer_profiles() uses the cluster template templateK40 included with handwriter. You may create your own cluster template if you prefer.\nThe proportion of graphs assigned to each cluster is calculated with handwriter::get_cluster_fill_rates(). The cluster fill rates serve as an estimate of a writer profile for the writer of the document.\n\nLoad handwriter and handwriterRF.\n\n\nShow code\nlibrary(handwriter)\nlibrary(handwriterRF)\n\n\n\nAttaching package: 'handwriterRF'\n\n\nThe following object is masked from 'package:handwriter':\n\n    get_cluster_fill_rates\n\n\nCalculate writer profiles for the training samples with templateK40. The output is a dataframe.\n\n\nShow code\nprofiles &lt;- handwriter::get_writer_profiles(\n  input_dir = \"path/to/training/samples/folder\",\n  measure = \"rates\",\n  num_cores = 1,\n  template = handwriter::templateK40,\n  output_dir = \"path/to/output/folder\"\n)\n\n\n\n\nTrain a Random Forest\nNow that we have writer profiles, we can train a random forest. train_rf() performs the following steps:\n\nCalculates the distance between each pair of writer profiles. The user chooses which distance measure(s) to use. The available distance measures are absolute, Manhattan, Euclidean, maximum, and cosine. Type ?train_rf for more information about these measures.\nGroups the distances into two classes - same writer and different writers - depending upon whether the two samples were from the same writer or two different writers.\nUses the ranger R package to train a random forest on the distances.\n\nWhen running train_rf() you have a several choices to make:\n\nChoose the number of decision trees to use. In our experiments with samples from the CSAFE Handwriting Database and the CVL Handwriting Database, we found that ntrees = 200 produced good results.\nIf you want the random forest to be saved in an RDS file, specify an output directory. If you don’t use the output_dir argument, the random forest will be returned but not saved to your computer.\nThere will be more different writers distances compared to same writer. If you want to train the random forest on balanced classes, where there are the same number of distances for both classes, set downsample_diff_pairs = TRUE. This randomly samples the different writers distances to equal the number of same writer distances.\n\n\n\nShow code\nrf &lt;- train_rf(\n  df = profiles,\n  ntrees = 200,\n  distance_measures = c(\"abs\", \"man\", \"euc\", \"max\", \"cos\"),\n  output_dir = \"path/to/output/folder\",\n  downsample_diff_pairs = TRUE\n)\n\n\nIf you would like to train a series of random forests with lapply or a for loop, use the run number and output directory arguments. The run number is added to the file name when the random forest is saved, so that subsequent random forests are not saved over the previous ones.\n\n\nShow code\nfor (i in 1:10) {\n  rf &lt;- train_rf(\n    df = profiles,\n    ntrees = 200,\n    distance_measures = c(\"abs\", \"man\"),\n    output_dir = \"path/to/output/folder\",\n    run_number = i,\n    downsample_diff_pairs = TRUE\n  )\n}"
+  },
+  {
+    "objectID": "articles/training-slr-model.html#create-a-reference-set-of-similarity-scores",
+    "href": "articles/training-slr-model.html#create-a-reference-set-of-similarity-scores",
+    "title": "Train a New SLR Model",
+    "section": "Create a Reference Set of Similarity Scores",
+    "text": "Create a Reference Set of Similarity Scores\nThe functions compare_documents() and compare_writer_profiles() either return a similarity score or a score-based likelihood. Both express how similar or not two handwriting samples are to each other.\nThe score-based likelihood ratio (SLR) builds upon the observed similarity score by comparing it to reference same writer and different writers similarity scores. The SLR is the ratio of the likelihood of observing the similarity score if the samples where written by the same writer to the likelihood of observing the similarity score if the samples where written by the different writers.\nIf compare_documents() and compare_writer_profiles() only return the similarity score, reference scores are not used. But if these functions calculate an SLR they need reference scores. HandwriterRF includes a set of reference score as ref_scores for use with these functions, but you can also create your own set of reference scores.\nRefer to the sections above to obtain suitable training samples and estimate writer profiles.\n\n\nShow code\nref_profiles &lt;- handwriter::get_writer_profiles(\n  input_dir = \"path/to/ref/samples/folder\",\n  measure = \"rates\",\n  num_cores = 1,\n  template = handwriter::templateK40,\n  output_dir = \"path/to/output/folder\"\n)\n\nrscores &lt;- get_ref_scores(rforest = rf,\n                          df = ref_profiles)\n\n\nWe can plot the built-in reference scores in a way similar to a histogram. These scores range from 0 to 1, inclusive. The plot_scores() function divides this range into bins and calculates the proportion of scores that fall into each bin. Normally, a histogram would show the count of scores in each bin. However, since there are many more different writers scores than same writer scores, the histogram for different writers scores dominates, making the same writer histogram hard to see. To fix this, we plot the proportion (rate) of scores in each bin instead of the raw frequency, which balances the two histograms and makes both more visible.\n\n\nShow code\nplot_scores(scores = ref_scores)\n\n\n\n\n\n\n\n\n\nIf we want to see how an observed score compares to the same writer and different writers scores, we use the obs_score argument. For example, if the observed score is 0.2, we plot\n\n\nShow code\nplot_scores(scores = ref_scores,\n            obs_score = 0.2)\n\n\n\n\n\n\n\n\n\nYou can also plot your own reference scores.\n\n\nShow code\nplot_scores(scores = rscores,\n            obs_score = 0.2)"
+  },
+  {
+    "objectID": "articles/training-slr-model.html#compare-documents-with-new-random-forest-and-reference-scores",
+    "href": "articles/training-slr-model.html#compare-documents-with-new-random-forest-and-reference-scores",
+    "title": "Train a New SLR Model",
+    "section": "Compare Documents with New Random Forest and Reference Scores",
+    "text": "Compare Documents with New Random Forest and Reference Scores\nIn this section, we will use the new random forest and reference scores to compare two handwritten documents. As before, the handwriting samples need to be scanned and saved as PNG files. Do not use samples or writers that were used to create the random forest or the reference scores, as this may bias the results.\nFirst, compare the two documents with the default random forest and reference scores. As an example, we use two handwriting samples included in handwriterRF. The system.file() function finds the location of the handwriterRF package on your computer. We use score_only = FALSE to return an SLR.\n\n\nShow code\nsample1 &lt;- system.file(\"extdata\", \"docs\", \"w0238_s01_pWOZ_r02.png\", package = \"handwriterRF\")\nsample2 &lt;- system.file(\"extdata\", \"docs\", \"w0238_s01_pWOZ_r03.png\", package = \"handwriterRF\")\n\ndf &lt;- compare_documents(\n  sample1, \n  sample2, \n  score_only = FALSE\n)\ndf\n\n\n            docname1  writer1           docname2  writer2 score      slr\n1 w0238_s01_pWOZ_r02 unknown1 w0238_s01_pWOZ_r03 unknown2  0.98 130.0626\n\n\nThe SLR is greater than one, which means the similarity score is more like the reference same writer scores than the different writers scores. We plot the observed score with the reference scores.\n\n\nShow code\nplot_scores(scores = ref_scores, obs_score = df$score)\n\n\n\n\n\n\n\n\n\nNext, compare the same documents with the new random forest and reference scores and plot the observed score.\n\n\nShow code\ndf_new &lt;- compare_documents(\n  sample1, \n  sample2, \n  score_only = FALSE,\n  rforest = rf,\n  reference_scores = rscores\n)\ndf_new\n\nplot_scores(scores = rscores, obs_score = df_new$score)"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Center for Statistics and Applications in Forensic Evidence\n195 Durham Center\n613 Morrill Road\nAmes, Iowa 50011\n(515) 294-7278\ncsafe@iastate.edu"
   },
   {
     "objectID": "articles/introduction-to-slr-model.html",
@@ -49,87 +168,10 @@
     "text": "Compare Two Test Handwriting Samples\nThe test dataframe contains writer profiles from writers not in train or validation. Let’s compare two writer profiles in the test set using the trained random forest and reference similarity scores. We’ll use the first two samples from writer w0005 as an example. First, we plot the writer profiles:\n\n\nShow code\ntest_samples &lt;- test[test$writer == \"w0002\",][1:2,]\n\nhandwriter::plot_writer_profiles(test_samples)\n\n\n\n\n\n\n\n\n\n\nSimilarity Score\nWe compute the similarity score between these two test samples with compare_writer_profiles(). This score is derived using the same procedure as the validation set: we calculate the distance between the two profiles, then compute the proportion of random forest decision trees that predict “same writer.”\n\n\nShow code\nscore &lt;- compare_writer_profiles(test_samples)\n\n\nCalculating distance between samples...\n\n\nCalculating similarity score...\n\n\nShow code\nscore\n\n\n            docname1 writer1           docname2 writer2 ground_truth score\n1 w0002_s03_pLND_r03   w0002 w0002_s02_pLND_r03   w0002  same writer     1\n\n\nLet’s visually see how the similarity score 1 compares to our reference same writer and different writers similarity scores.\n\n\nShow code\nplot_scores(ref_scores, obs_score = score$score)\n\n\n\n\n\n\n\n\n\n\n\nScore-based Likelihood Ratio\nA score-based likelihood ratio (SLR) is a statistical measure that evaluates the likelihood of observing a similarity score under two competing propositions:\n\\(P_1: \\text{the handwriting samples were written by the same writer}\\)\n\\(P_2: \\text{the handwriting samples were written by different writers}\\)\nThe SLR is the ratio of the likelihood of observing the similarity score under \\(P_1\\) to the likelihood under \\(P_2\\). To calculate the SLR, we use compare_writer_profiles() with the score_only = FALSE argument. This function applies kernel density estimation to fit probability density functions (PDFs) to the reference scores for same writer and different writer pairs. The SLR is the ratio of the height of the same writer PDF at the observed similarity score to the height of the different writer PDF at the same score. An SLR greater than 1 suggests the samples were likely written by the same writer, while an SLR less than 1 suggests the samples were likely written by different writers.\n\n\nShow code\nslr &lt;- compare_writer_profiles(test_samples, score_only = FALSE)\n\n\nCalculating distance between samples...\n\n\nCalculating similarity score...\n\n\nCalculating SLR...\n\n\nShow code\nslr\n\n\n            docname1 writer1           docname2 writer2 ground_truth score\n1 w0002_s03_pLND_r03   w0002 w0002_s02_pLND_r03   w0002  same writer     1\n       slr\n1 254.8966"
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
+    "objectID": "articles.html",
+    "href": "articles.html",
+    "title": "Articles",
     "section": "",
-    "text": "Center for Statistics and Applications in Forensic Evidence\n195 Durham Center\n613 Morrill Road\nAmes, Iowa 50011\n(515) 294-7278\ncsafe@iastate.edu"
-  },
-  {
-    "objectID": "articles/training-slr-model.html",
-    "href": "articles/training-slr-model.html",
-    "title": "Train a New SLR Model",
-    "section": "",
-    "text": "HandwriterRF has a pre-trained random forest and set of reference similarity scores that are the default for compare_documents() and compare_writer_profiles(). This tutorial shows you how to train your own random forest and create your own set of reference scores to use with these functions."
-  },
-  {
-    "objectID": "articles/training-slr-model.html#training-data",
-    "href": "articles/training-slr-model.html#training-data",
-    "title": "Train a New SLR Model",
-    "section": "Training Data",
-    "text": "Training Data\nYou need scanned handwriting samples saved as PNG images for training the random forest and making reference scores. The training set must include at least two samples from each writer so that the random forest can see examples of documents written by the same writer and examples of documents written by different writers.\nThe CSAFE Handwriting Database contains suitable handwriting samples that you may download for free if you don’t have your own samples."
-  },
-  {
-    "objectID": "articles/training-slr-model.html#train-a-random-forest",
-    "href": "articles/training-slr-model.html#train-a-random-forest",
-    "title": "Train a New SLR Model",
-    "section": "Train a Random Forest",
-    "text": "Train a Random Forest\n\nEstimate Writer Profiles\nPlace handwriting samples that you will use to train a random forest in a folder. The first step is to estimate a writer profile from each handwriting sample. We do this with handwriter::get_writer_profiles(). Behind the scenes, handwriter::get_writer_profiles() performs the following steps for each sample:\n\nSplits the handwriting into component shapes, called graphs, with handwriter::processDocument().\nThe graphs are sorted into clusters of similar shapes using a cluster template created with handwriter::make_clustering_template(). By default, handwriter::get_writer_profiles() uses the cluster template templateK40 included with handwriter. You may create your own cluster template if you prefer.\nThe proportion of graphs assigned to each cluster is calculated with handwriter::get_cluster_fill_rates(). The cluster fill rates serve as an estimate of a writer profile for the writer of the document.\n\nLoad handwriter and handwriterRF.\n\n\nShow code\nlibrary(handwriter)\nlibrary(handwriterRF)\n\n\n\nAttaching package: 'handwriterRF'\n\n\nThe following object is masked from 'package:handwriter':\n\n    get_cluster_fill_rates\n\n\nCalculate writer profiles for the training samples with templateK40. The output is a dataframe.\n\n\nShow code\nprofiles &lt;- handwriter::get_writer_profiles(\n  input_dir = \"path/to/training/samples/folder\",\n  measure = \"rates\",\n  num_cores = 1,\n  template = handwriter::templateK40,\n  output_dir = \"path/to/output/folder\"\n)\n\n\n\n\nTrain a Random Forest\nNow that we have writer profiles, we can train a random forest. train_rf() performs the following steps:\n\nCalculates the distance between each pair of writer profiles. The user chooses which distance measure(s) to use. The available distance measures are absolute, Manhattan, Euclidean, maximum, and cosine. Type ?train_rf for more information about these measures.\nGroups the distances into two classes - same writer and different writers - depending upon whether the two samples were from the same writer or two different writers.\nUses the ranger R package to train a random forest on the distances.\n\nWhen running train_rf() you have a several choices to make:\n\nChoose the number of decision trees to use. In our experiments with samples from the CSAFE Handwriting Database and the CVL Handwriting Database, we found that ntrees = 200 produced good results.\nIf you want the random forest to be saved in an RDS file, specify an output directory. If you don’t use the output_dir argument, the random forest will be returned but not saved to your computer.\nThere will be more different writers distances compared to same writer. If you want to train the random forest on balanced classes, where there are the same number of distances for both classes, set downsample_diff_pairs = TRUE. This randomly samples the different writers distances to equal the number of same writer distances.\n\n\n\nShow code\nrf &lt;- train_rf(\n  df = profiles,\n  ntrees = 200,\n  distance_measures = c(\"abs\", \"man\", \"euc\", \"max\", \"cos\"),\n  output_dir = \"path/to/output/folder\",\n  downsample_diff_pairs = TRUE\n)\n\n\nIf you would like to train a series of random forests with lapply or a for loop, use the run number and output directory arguments. The run number is added to the file name when the random forest is saved, so that subsequent random forests are not saved over the previous ones.\n\n\nShow code\nfor (i in 1:10) {\n  rf &lt;- train_rf(\n    df = profiles,\n    ntrees = 200,\n    distance_measures = c(\"abs\", \"man\"),\n    output_dir = \"path/to/output/folder\",\n    run_number = i,\n    downsample_diff_pairs = TRUE\n  )\n}"
-  },
-  {
-    "objectID": "articles/training-slr-model.html#create-a-reference-set-of-similarity-scores",
-    "href": "articles/training-slr-model.html#create-a-reference-set-of-similarity-scores",
-    "title": "Train a New SLR Model",
-    "section": "Create a Reference Set of Similarity Scores",
-    "text": "Create a Reference Set of Similarity Scores\nThe functions compare_documents() and compare_writer_profiles() either return a similarity score or a score-based likelihood. Both express how similar or not two handwriting samples are to each other.\nThe score-based likelihood ratio (SLR) builds upon the observed similarity score by comparing it to reference same writer and different writers similarity scores. The SLR is the ratio of the likelihood of observing the similarity score if the samples where written by the same writer to the likelihood of observing the similarity score if the samples where written by the different writers.\nIf compare_documents() and compare_writer_profiles() only return the similarity score, reference scores are not used. But if these functions calculate an SLR they need reference scores. HandwriterRF includes a set of reference score as ref_scores for use with these functions, but you can also create your own set of reference scores.\nRefer to the sections above to obtain suitable training samples and estimate writer profiles.\n\n\nShow code\nref_profiles &lt;- handwriter::get_writer_profiles(\n  input_dir = \"path/to/ref/samples/folder\",\n  measure = \"rates\",\n  num_cores = 1,\n  template = handwriter::templateK40,\n  output_dir = \"path/to/output/folder\"\n)\n\nrscores &lt;- get_ref_scores(rforest = rf,\n                          df = ref_profiles)\n\n\nWe can plot the built-in reference scores in a way similar to a histogram. These scores range from 0 to 1, inclusive. The plot_scores() function divides this range into bins and calculates the proportion of scores that fall into each bin. Normally, a histogram would show the count of scores in each bin. However, since there are many more different writers scores than same writer scores, the histogram for different writers scores dominates, making the same writer histogram hard to see. To fix this, we plot the proportion (rate) of scores in each bin instead of the raw frequency, which balances the two histograms and makes both more visible.\n\n\nShow code\nplot_scores(scores = ref_scores)\n\n\n\n\n\n\n\n\n\nIf we want to see how an observed score compares to the same writer and different writers scores, we use the obs_score argument. For example, if the observed score is 0.2, we plot\n\n\nShow code\nplot_scores(scores = ref_scores,\n            obs_score = 0.2)\n\n\n\n\n\n\n\n\n\nYou can also plot your own reference scores.\n\n\nShow code\nplot_scores(scores = rscores,\n            obs_score = 0.2)"
-  },
-  {
-    "objectID": "articles/training-slr-model.html#compare-documents-with-new-random-forest-and-reference-scores",
-    "href": "articles/training-slr-model.html#compare-documents-with-new-random-forest-and-reference-scores",
-    "title": "Train a New SLR Model",
-    "section": "Compare Documents with New Random Forest and Reference Scores",
-    "text": "Compare Documents with New Random Forest and Reference Scores\nIn this section, we will use the new random forest and reference scores to compare two handwritten documents. As before, the handwriting samples need to be scanned and saved as PNG files. Do not use samples or writers that were used to create the random forest or the reference scores, as this may bias the results.\nFirst, compare the two documents with the default random forest and reference scores. As an example, we use two handwriting samples included in handwriterRF. The system.file() function finds the location of the handwriterRF package on your computer. We use score_only = FALSE to return an SLR.\n\n\nShow code\nsample1 &lt;- system.file(\"extdata\", \"docs\", \"w0238_s01_pWOZ_r02.png\", package = \"handwriterRF\")\nsample2 &lt;- system.file(\"extdata\", \"docs\", \"w0238_s01_pWOZ_r03.png\", package = \"handwriterRF\")\n\ndf &lt;- compare_documents(\n  sample1, \n  sample2, \n  score_only = FALSE\n)\ndf\n\n\n            docname1  writer1           docname2  writer2 score      slr\n1 w0238_s01_pWOZ_r02 unknown1 w0238_s01_pWOZ_r03 unknown2  0.98 130.0626\n\n\nThe SLR is greater than one, which means the similarity score is more like the reference same writer scores than the different writers scores. We plot the observed score with the reference scores.\n\n\nShow code\nplot_scores(scores = ref_scores, obs_score = df$score)\n\n\n\n\n\n\n\n\n\nNext, compare the same documents with the new random forest and reference scores and plot the observed score.\n\n\nShow code\ndf_new &lt;- compare_documents(\n  sample1, \n  sample2, \n  score_only = FALSE,\n  rforest = rf,\n  reference_scores = rscores\n)\ndf_new\n\nplot_scores(scores = rscores, obs_score = df_new$score)"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome",
-    "section": "",
-    "text": "Unlock the power of handwriting analysis with handwriter. This tool is designed to assist forensic examiners by analyzing handwritten documents. Whether you are a forensic document examiner, legal professional, academic, or simply curious about how statistics are applied to handwriting, handwriter provides an automated way to evaluate handwriting samples."
-  },
-  {
-    "objectID": "quick-start-guide.html",
-    "href": "quick-start-guide.html",
-    "title": "Quick Start Guide",
-    "section": "",
-    "text": "Handwriter requires R, RStudio IDE, and JAGS.\n\nInstall R and RStudio from POSIT\nInstall JAGS from SourceForge\nWindows only:\n\nIf you have a 64-bit Intel machine install RTools from the RTools44 installer\nIf you have a 64-bit ARM machine install RTools from the RTools44 ARM installer\n\n\n\n\n\nInstall the handwriterApp R package. Open RStudio and navigate to the console window and type\n\n\nShow code\ninstall.packages(\"handwriter\")\ninstall.packages(\"handwriterRF\")\ninstall.packages(\"handwriterApp\")\n\n\nYou might encounter the following message.\n\nHandwriter uses other R packages. This message asks whether to install the newest versions of the Rcpp, mvtnorm, and curl packages. You will likely see different R packages listed. Type “1” without the quotation marks and hit enter to install all updates."
-  },
-  {
-    "objectID": "quick-start-guide.html#installation",
-    "href": "quick-start-guide.html#installation",
-    "title": "Quick Start Guide",
-    "section": "",
-    "text": "Handwriter requires R, RStudio IDE, and JAGS.\n\nInstall R and RStudio from POSIT\nInstall JAGS from SourceForge\nWindows only:\n\nIf you have a 64-bit Intel machine install RTools from the RTools44 installer\nIf you have a 64-bit ARM machine install RTools from the RTools44 ARM installer\n\n\n\n\n\nInstall the handwriterApp R package. Open RStudio and navigate to the console window and type\n\n\nShow code\ninstall.packages(\"handwriter\")\ninstall.packages(\"handwriterRF\")\ninstall.packages(\"handwriterApp\")\n\n\nYou might encounter the following message.\n\nHandwriter uses other R packages. This message asks whether to install the newest versions of the Rcpp, mvtnorm, and curl packages. You will likely see different R packages listed. Type “1” without the quotation marks and hit enter to install all updates."
-  },
-  {
-    "objectID": "quick-start-guide.html#handwriting-samples",
-    "href": "quick-start-guide.html#handwriting-samples",
-    "title": "Quick Start Guide",
-    "section": "Handwriting Samples",
-    "text": "Handwriting Samples\nScan your handwriting samples at 300 DPI and save them as PNG files. If you don’t have your own handwriting samples, you can download samples for free from the CSAFE Handwriting Database."
-  },
-  {
-    "objectID": "quick-start-guide.html#launch-the-app",
-    "href": "quick-start-guide.html#launch-the-app",
-    "title": "Quick Start Guide",
-    "section": "Launch the App",
-    "text": "Launch the App\nOpen RStudio, navigate to the console window, and type:\n\n\nShow code\nlibrary(handwriterApp)\nlibrary(handwriterRF)\nhandwriterApp()\n\n\nIn the pop-up window, click Open in Browser. If you use the app in the pop-up window instead of in a browser, some links will not work."
-  },
-  {
-    "objectID": "quick-start-guide.html#choose-a-scenario",
-    "href": "quick-start-guide.html#choose-a-scenario",
-    "title": "Quick Start Guide",
-    "section": "Choose a Scenario",
-    "text": "Choose a Scenario\nHandwriter addresses two scenarios.\n\n\n\n  \n    SCENARIO 1\n    \n    Compare a questioned document to a single handwritten document.\n    \n    \n    \n    \n    \n    \n    Requirements\n      \n        \n        Questioned Document: from an unknown writer.\n        \n        \n        Comparison Document: from a known or unknown writer.\n        \n      \n    \n    \n    \n    Result: A score-based likelihood ratio that expresses the support of the evidence in favor of the samples having been written by the same writer or different writers.\n    \n  \n\n\n\n  \n    SCENARIO 2\n    \n    \n    Compare a questioned document to a group of known handwriting samples.\n    \n    \n    \n    \n    \n    Requirements\n      \n        \n        Questioned Document: from an unknown writer.\n        \n        \n        Additional Documents: Three known writing samples from each writer in a group of potential writers. The questioned document MUST have been written by someone in this group.\n        \n      \n    \n    \n    \n    Result: The posterior probability that each potential writer wrote the questioned document.\n    \n    \n  \n\n\n\nIn the app, choose the scenario that fits your handwriting samples by clicking the scenario’s button. Follow the instructions to analyze your handwriting samples."
+    "text": "An Intro to the SLR Method\nTrain a New SLR Model"
   }
 ]
