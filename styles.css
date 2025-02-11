@@ -15,56 +15,64 @@
 .quarto-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 @media (max-width: 768px) {
   .quarto-container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
 main {
-  padding-left: 1rem;
+  margin-top: 0;
+  padding-left: 0.5rem;
   padding-right: 1rem;
 }
 
-/* Navbar styling */
-.navbar-brand img {
-    max-height: 50px;
-    width: auto;
-    vertical-align: middle;
-}
-
+/* Navbar structure */
 .navbar {
   background-color: white !important;
-  padding-left: 10px;
-  padding-bottom: 0px;
-  margin-bottom: 2rem;
-  height: 70px;
-  display: flex;
-  align-items: flex-end;
+  padding: 1rem 10px;
+  margin-bottom: 0 !important;
+  height: auto;
 }
 
-.navbar > .container,
-.navbar > .container-fluid,
-.navbar > .container-sm,
-.navbar > .container-md,
-.navbar > .container-lg,
-.navbar > .container-xl,
-.navbar > .container-xxl {
-  display: flex;
-  flex-wrap: inherit;
-  justify-content: space-between;
-  align-items: flex-end;
+.navbar .container-fluid {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* Logo styling */
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+}
+
+.navbar-brand img {
+  max-height: 50px;
+  width: auto;
+  vertical-align: middle;
+}
+
+/* Navigation menu */
+.navbar-collapse {
+  width: 100%;
+}
+
+.navbar-nav {
+  gap: 1.5rem;
 }
 
 /* Navigation links */
 .navbar-nav .nav-link {
-    color: var(--md-gray);
-    padding: 0;
+  color: var(--md-gray);
+  padding: 0;
 }
 
 .navbar-nav .nav-link.active, 
@@ -74,8 +82,8 @@ main {
 }
 
 .navbar-nav .nav-link:hover {
-    color: var(--dk-gray);
-    font-weight: bold;
+  color: var(--dk-gray);
+  font-weight: bold;
 }
 
 /* Typography */
@@ -152,31 +160,31 @@ h6, .h6 {
 .sidebar nav[role="doc-toc"] ul > li > ul > li > a.focus,
 .sidebar nav[role="doc-toc"] ul > li > a.active, 
 .sidebar nav[role="doc-toc"] ul > li > ul > li > a.active {
-    color: var(--purple) !important;
-    font-weight: bold;
-    border-left-width: 1px;
-    border-left-style: solid;
-    border-left-color: var(--purple);
+  color: var(--purple) !important;
+  font-weight: bold;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: var(--purple);
 }
 
 /* Links */
 a:link {
-    color: var(--purple);
+  color: var(--purple);
 }
 
 a:visited {
-    color: var(--lt-purple);
-    font-weight: normal;
+  color: var(--lt-purple);
+  font-weight: normal;
 }
 
 a:hover {
-    color: var(--lt-purple);
-    font-weight: normal;
+  color: var(--lt-purple);
+  font-weight: normal;
 }
 
 a:active {
-    color: var(--lt-purple);
-    font-weight: normal;
+  color: var(--lt-purple);
+  font-weight: normal;
 }
 
 /* Body */
@@ -188,7 +196,7 @@ body {
 }
 
 *, ::after, ::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Scenario Cards */
