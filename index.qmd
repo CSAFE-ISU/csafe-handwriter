@@ -7,7 +7,7 @@ Unlock the power of handwriting analysis with handwriter. This tool is designed 
 
 ## Get Started
 
-![](www/quick_start.png){fig-align="center"}
+[![](www/quick_start.png){fig-align="center"}](quick-start-guide.qmd)
 
 ## Learn More
 

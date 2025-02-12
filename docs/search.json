@@ -44,35 +44,35 @@
   {
     "objectID": "quick-start-guide.html",
     "href": "quick-start-guide.html",
-    "title": "Quick Start Guide",
+    "title": "",
     "section": "",
-    "text": "Handwriter requires R, RStudio IDE, and JAGS.\n\nInstall R and RStudio from POSIT\nInstall JAGS from SourceForge\nWindows only:\n\nIf you have a 64-bit Intel machine install RTools from the RTools44 installer\nIf you have a 64-bit ARM machine install RTools from the RTools44 ARM installer\n\n\n\n\n\nInstall the handwriterApp R package. Open RStudio and navigate to the console window and type\n\n\nShow code\ninstall.packages(\"handwriter\")\ninstall.packages(\"handwriterRF\")\ninstall.packages(\"handwriterApp\")\n\n\nYou might encounter the following message.\n\nHandwriter uses other R packages. This message asks whether to install the newest versions of the Rcpp, mvtnorm, and curl packages. You will likely see different R packages listed. Type “1” without the quotation marks and hit enter to install all updates."
+    "text": "CodeShow All CodeHide All CodeView Source"
   },
   {
     "objectID": "quick-start-guide.html#installation",
     "href": "quick-start-guide.html#installation",
-    "title": "Quick Start Guide",
-    "section": "",
-    "text": "Handwriter requires R, RStudio IDE, and JAGS.\n\nInstall R and RStudio from POSIT\nInstall JAGS from SourceForge\nWindows only:\n\nIf you have a 64-bit Intel machine install RTools from the RTools44 installer\nIf you have a 64-bit ARM machine install RTools from the RTools44 ARM installer\n\n\n\n\n\nInstall the handwriterApp R package. Open RStudio and navigate to the console window and type\n\n\nShow code\ninstall.packages(\"handwriter\")\ninstall.packages(\"handwriterRF\")\ninstall.packages(\"handwriterApp\")\n\n\nYou might encounter the following message.\n\nHandwriter uses other R packages. This message asks whether to install the newest versions of the Rcpp, mvtnorm, and curl packages. You will likely see different R packages listed. Type “1” without the quotation marks and hit enter to install all updates."
+    "title": "",
+    "section": "Installation",
+    "text": "Installation\n\nInstall Software\nHandwriter requires R, RStudio IDE, and JAGS.\n\nInstall R and RStudio from POSIT\nInstall JAGS from SourceForge\nWindows only:\n\nIf you have a 64-bit Intel machine install RTools from the RTools44 installer\nIf you have a 64-bit ARM machine install RTools from the RTools44 ARM installer\n\n\n\n\nInstall R Packages\nInstall the handwriterApp R package. Open RStudio and navigate to the console window and type\n\n\nShow code\ninstall.packages(\"handwriter\")\ninstall.packages(\"handwriterRF\")\ninstall.packages(\"handwriterApp\")\n\n\nYou might encounter the following message.\n\nHandwriter uses other R packages. This message asks whether to install the newest versions of the Rcpp, mvtnorm, and curl packages. You will likely see different R packages listed. Type “1” without the quotation marks and hit enter to install all updates."
   },
   {
     "objectID": "quick-start-guide.html#handwriting-samples",
     "href": "quick-start-guide.html#handwriting-samples",
-    "title": "Quick Start Guide",
+    "title": "",
     "section": "Handwriting Samples",
     "text": "Handwriting Samples\nScan your handwriting samples at 300 DPI and save them as PNG files. If you don’t have your own handwriting samples, you can download samples for free from the CSAFE Handwriting Database."
   },
   {
     "objectID": "quick-start-guide.html#launch-the-app",
     "href": "quick-start-guide.html#launch-the-app",
-    "title": "Quick Start Guide",
+    "title": "",
     "section": "Launch the App",
     "text": "Launch the App\nOpen RStudio, navigate to the console window, and type:\n\n\nShow code\nlibrary(handwriterApp)\nlibrary(handwriterRF)\nhandwriterApp()\n\n\nIn the pop-up window, click Open in Browser. If you use the app in the pop-up window instead of in a browser, some links will not work."
   },
   {
     "objectID": "quick-start-guide.html#choose-a-scenario",
     "href": "quick-start-guide.html#choose-a-scenario",
-    "title": "Quick Start Guide",
+    "title": "",
     "section": "Choose a Scenario",
     "text": "Choose a Scenario\nHandwriter addresses two scenarios.\n\n\n\n  \n    SCENARIO 1\n    \n    Compare a questioned document to a single handwritten document.\n    \n    \n    \n    \n    \n    \n    Requirements\n      \n        \n        Questioned Document: from an unknown writer.\n        \n        \n        Comparison Document: from a known or unknown writer.\n        \n      \n    \n    \n    \n    Result: A score-based likelihood ratio that expresses the support of the evidence in favor of the samples having been written by the same writer or different writers.\n    \n  \n\n\n\n  \n    SCENARIO 2\n    \n    \n    Compare a questioned document to a group of known handwriting samples.\n    \n    \n    \n    \n    \n    Requirements\n      \n        \n        Questioned Document: from an unknown writer.\n        \n        \n        Additional Documents: Three known writing samples from each writer in a group of potential writers. The questioned document MUST have been written by someone in this group.\n        \n      \n    \n    \n    \n    Result: The posterior probability that each potential writer wrote the questioned document.\n    \n    \n  \n\n\n\nIn the app, choose the scenario that fits your handwriting samples by clicking the scenario’s button. Follow the instructions to analyze your handwriting samples."
   },

@@ -1,6 +1,6 @@
----
-title: "Quick Start Guide"
----
+![](www/quick_start.png){width=300px}
+
+# Quick Start Guide
 
 ## Installation
 
