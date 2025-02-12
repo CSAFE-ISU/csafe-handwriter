@@ -4,3 +4,12 @@ code-tools: FALSE
 ---
 
 Unlock the power of handwriting analysis with handwriter. This tool is designed to assist forensic examiners by analyzing handwritten documents. Whether you are a forensic document examiner, legal professional, academic, or simply curious about how statistics are applied to handwriting, handwriter provides an automated way to evaluate handwriting samples.
+
+## Forensic Scenarios
+
+::: {layout-ncol=2}
+![](www/open_set.png){fig-align="center"}
+
+![](www/closed_set.png){fig-align="center"}
+:::
+

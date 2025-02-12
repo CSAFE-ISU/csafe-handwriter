@@ -84,6 +84,13 @@
     "text": "Unlock the power of handwriting analysis with handwriter. This tool is designed to assist forensic examiners by analyzing handwritten documents. Whether you are a forensic document examiner, legal professional, academic, or simply curious about how statistics are applied to handwriting, handwriter provides an automated way to evaluate handwriting samples."
   },
   {
+    "objectID": "index.html#forensic-scenarios",
+    "href": "index.html#forensic-scenarios",
+    "title": "Welcome",
+    "section": "Forensic Scenarios",
+    "text": "Forensic Scenarios"
+  },
+  {
     "objectID": "articles/training-slr-model.html",
     "href": "articles/training-slr-model.html",
     "title": "Train a New SLR Model",
