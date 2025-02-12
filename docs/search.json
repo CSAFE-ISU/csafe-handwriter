@@ -98,6 +98,62 @@
     "text": "Learn More\nhandwriter addresses two forensic scenarios."
   },
   {
+    "objectID": "learn-more/scenario1_model_card_summary.html",
+    "href": "learn-more/scenario1_model_card_summary.html",
+    "title": "handwriter Open Set Method",
+    "section": "",
+    "text": "Handwriter’s open set method compares two handwritten documents, generating a score-based likelihood ratio (SLR) that quantifies the strength of the evidence in favor of the documents being written by the same writer or different writers. It uses writer profiles based on graphical features extracted from handwriting samples. Handwriter was developed by Iowa State University’s Center for Statistics and Applications in Forensic Evidence.\nModel Version: 1.0.2.9000\nLicense: GPL-3\nQuick Start Guide: here\nSend questions or comments: csafe@iastate.edu"
+  },
+  {
+    "objectID": "learn-more/scenario1_model_card_summary.html#handwriting-sample-requirements",
+    "href": "learn-more/scenario1_model_card_summary.html#handwriting-sample-requirements",
+    "title": "handwriter Open Set Method",
+    "section": "Handwriting Sample Requirements",
+    "text": "Handwriting Sample Requirements\n\nSamples should consist of 50+ words.\nSamples should be scanned with 300 DPI resolution and saved in PNG file format.\nSamples should be written in English. Model accuracy decreases for shorter samples and the model has not been evaluated for other languages."
+  },
+  {
+    "objectID": "learn-more/scenario1_model_card_summary.html#interpreting-the-result",
+    "href": "learn-more/scenario1_model_card_summary.html#interpreting-the-result",
+    "title": "handwriter Open Set Method",
+    "section": "Interpreting the Result",
+    "text": "Interpreting the Result\nAn SLR greater than one supports that the documents were written by the same person. An SLR of less than one supports that the documents were written by different people."
+  },
+  {
+    "objectID": "learn-more/scenario1_model_card_summary.html#primary-intended-uses",
+    "href": "learn-more/scenario1_model_card_summary.html#primary-intended-uses",
+    "title": "handwriter Open Set Method",
+    "section": "Primary Intended Uses",
+    "text": "Primary Intended Uses\n\nResearch: Use the software for academic or scientific research related to forensic handwriting analysis.\nTesting: Use the software for internal testing within forensic labs to evaluate its performance."
+  },
+  {
+    "objectID": "learn-more/scenario1_model_card_summary.html#primary-intended-users",
+    "href": "learn-more/scenario1_model_card_summary.html#primary-intended-users",
+    "title": "handwriter Open Set Method",
+    "section": "Primary intended users",
+    "text": "Primary intended users\n\nForensic document examiners, academic or scientific researchers"
+  },
+  {
+    "objectID": "learn-more/scenario1_model_card_summary.html#accuracy-on-benchmark-datasets",
+    "href": "learn-more/scenario1_model_card_summary.html#accuracy-on-benchmark-datasets",
+    "title": "handwriter Open Set Method",
+    "section": "Accuracy on Benchmark Datasets",
+    "text": "Accuracy on Benchmark Datasets\nModel evaluation was performed on 1,699 paragraph-length handwriting samples from 284 writers from the CSAFE Handwriting Database and the CVL Handwriting Database. In the case where the two handwriting samples were not copies of the same writing prompt, the false positive rate was 4.2% (23,637 false positives out of 566,282 ground truth negatives), and the false negative rate was 8.9% (159 false negatives out of 1,787 ground truth positives). For more results see Johnson et al. (2022)"
+  },
+  {
+    "objectID": "learn-more/scenario1_model_card_summary.html#for-more-details",
+    "href": "learn-more/scenario1_model_card_summary.html#for-more-details",
+    "title": "handwriter Open Set Method",
+    "section": "For more details",
+    "text": "For more details\nJohnson, M. Q., & Ommen, D. M. (2022). Handwriting identification using random forests and score‐based likelihood ratios. Statistical Analysis and Data Mining: The ASA Data Science Journal, 15(3), 357-375. https://doi.org/10.1002/sam.11566"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Center for Statistics and Applications in Forensic Evidence\n195 Durham Center\n613 Morrill Road\nAmes, Iowa 50011\n(515) 294-7278\ncsafe@iastate.edu"
+  },
+  {
     "objectID": "learn-more/training-slr-model.html",
     "href": "learn-more/training-slr-model.html",
     "title": "Train a New SLR Model",
@@ -131,13 +187,6 @@
     "title": "Train a New SLR Model",
     "section": "Compare Documents with New Random Forest and Reference Scores",
     "text": "Compare Documents with New Random Forest and Reference Scores\nIn this section, we will use the new random forest and reference scores to compare two handwritten documents. As before, the handwriting samples need to be scanned and saved as PNG files. Do not use samples or writers that were used to create the random forest or the reference scores, as this may bias the results.\nFirst, compare the two documents with the default random forest and reference scores. As an example, we use two handwriting samples included in handwriterRF. The system.file() function finds the location of the handwriterRF package on your computer. We use score_only = FALSE to return an SLR.\n\n\nShow code\nsample1 &lt;- system.file(\"extdata\", \"docs\", \"w0238_s01_pWOZ_r02.png\", package = \"handwriterRF\")\nsample2 &lt;- system.file(\"extdata\", \"docs\", \"w0238_s01_pWOZ_r03.png\", package = \"handwriterRF\")\n\ndf &lt;- compare_documents(\n  sample1, \n  sample2, \n  score_only = FALSE\n)\ndf\n\n\n            docname1  writer1           docname2  writer2 score      slr\n1 w0238_s01_pWOZ_r02 unknown1 w0238_s01_pWOZ_r03 unknown2  0.98 130.0626\n\n\nThe SLR is greater than one, which means the similarity score is more like the reference same writer scores than the different writers scores. We plot the observed score with the reference scores.\n\n\nShow code\nplot_scores(scores = ref_scores, obs_score = df$score)\n\n\n\n\n\n\n\n\n\nNext, compare the same documents with the new random forest and reference scores and plot the observed score.\n\n\nShow code\ndf_new &lt;- compare_documents(\n  sample1, \n  sample2, \n  score_only = FALSE,\n  rforest = rf,\n  reference_scores = rscores\n)\ndf_new\n\nplot_scores(scores = rscores, obs_score = df_new$score)"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Center for Statistics and Applications in Forensic Evidence\n195 Durham Center\n613 Morrill Road\nAmes, Iowa 50011\n(515) 294-7278\ncsafe@iastate.edu"
   },
   {
     "objectID": "learn-more/introduction-to-slr-model.html",
@@ -186,6 +235,20 @@
     "href": "learn-more.html",
     "title": "Learn More",
     "section": "",
-    "text": "An Intro to the SLR Method\nTrain a New SLR Model"
+    "text": "Scenario 1 - Executive Summary\nAn Intro to the SLR Method\nTrain a New SLR Model"
+  },
+  {
+    "objectID": "learn-more.html#scenario-1---the-open-set-problem",
+    "href": "learn-more.html#scenario-1---the-open-set-problem",
+    "title": "Learn More",
+    "section": "",
+    "text": "Scenario 1 - Executive Summary\nAn Intro to the SLR Method\nTrain a New SLR Model"
+  },
+  {
+    "objectID": "learn-more.html#scenario-2---the-closed-set-problem",
+    "href": "learn-more.html#scenario-2---the-closed-set-problem",
+    "title": "Learn More",
+    "section": "Scenario 2 - The Closed Set Problem",
+    "text": "Scenario 2 - The Closed Set Problem"
   }
 ]

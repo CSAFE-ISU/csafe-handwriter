@@ -7,15 +7,14 @@ Unlock the power of handwriting analysis with handwriter. This tool is designed 
 
 ## Get Started
 
-[![](www/quick_start.png){fig-align="center"}](quick-start-guide.qmd)
+[![](www/quick_start.png){fig-align="center"}](quick-start-guide.html)
 
 ## Learn More
 
 handwriter addresses two forensic scenarios.
 
-::: {layout-ncol=2}
+::: {layout-ncol="2"}
 ![](www/open_set.png){fig-align="center"}
 
 ![](www/closed_set.png){fig-align="center"}
 :::
-

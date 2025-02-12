@@ -1,0 +1,43 @@
+---
+title: "handwriter's Open Set Method"
+subtitle: "Executive Summary"
+format: html
+---
+
+Handwriter’s open set method compares two handwritten documents, generating a score-based likelihood ratio (SLR) that quantifies the strength of the evidence in favor of the documents being written by the same writer or different writers. It uses writer profiles based on graphical features extracted from handwriting samples. Handwriter was developed by Iowa State University's Center for Statistics and Applications in Forensic Evidence.
+
+**Model Version:** 1.0.2.9000
+
+**License:** GPL-3
+
+**Quick Start Guide:** [here](../quick-start-guide.html)
+
+**Send questions or comments:** csafe\@iastate.edu
+
+## **Handwriting Sample Requirements**
+
+-   Samples should consist of 50+ words.
+-   Samples should be scanned with 300 DPI resolution and saved in PNG file format.
+-   Samples should be written in English. Model accuracy decreases for shorter samples and the model has not been evaluated for other languages.
+
+## Interpreting the Result
+
+An SLR greater than one supports that the documents were written by the same person. An SLR of less than one supports that the documents were written by different people.
+
+## Primary Intended Uses
+
+-   **Research:** Use the software for academic or scientific research related to forensic handwriting analysis.
+
+-   **Testing:** Use the software for internal testing within forensic labs to evaluate its performance.
+
+## Primary intended users
+
+-   Forensic document examiners, academic or scientific researchers
+
+## Accuracy on Benchmark Datasets
+
+Model evaluation was performed on 1,699 paragraph-length handwriting samples from 284 writers from the CSAFE Handwriting Database and the CVL Handwriting Database. In the case where the two handwriting samples were not copies of the same writing prompt, the false positive rate was 4.2% (23,637 false positives out of 566,282 ground truth negatives), and the false negative rate was 8.9% (159 false negatives out of 1,787 ground truth positives). For more results see Johnson et al. (2022)
+
+## For more details
+
+Johnson, M. Q., & Ommen, D. M. (2022). Handwriting identification using random forests and score‐based likelihood ratios. Statistical Analysis and Data Mining: The ASA Data Science Journal, 15(3), 357-375. <https://doi.org/10.1002/sam.11566>
