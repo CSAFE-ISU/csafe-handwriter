@@ -11,8 +11,8 @@ website:
         file: index.qmd
       - text: "Quick Start Guide"
         file: quick-start-guide.qmd
-      - text: "Articles"
-        file: articles.qmd
+      - text: "Learn More"
+        file: learn-more.qmd
       - text: "Permitted Use"
         file: permitted-use.qmd
       - text: Contact

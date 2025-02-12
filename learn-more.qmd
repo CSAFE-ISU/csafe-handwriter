@@ -1,0 +1,12 @@
+---
+title: "Learn More"
+toc: FALSE
+code-tools: FALSE
+---
+
+## Scenario 1 - The Open Set Problem
+
+-   [An Intro to the SLR Method](learn-more/introduction-to-slr-model.qmd)
+-   [Train a New SLR Model](learn-more/training-slr-model.qmd)
+
+## Scenario 2 - The Closed Set Problem
