@@ -84,6 +84,13 @@
     "text": "Unlock the power of handwriting analysis with handwriter. This tool is designed to assist forensic examiners by analyzing handwritten documents. Whether you are a forensic document examiner, legal professional, academic, or simply curious about how statistics are applied to handwriting, handwriter provides an automated way to evaluate handwriting samples."
   },
   {
+    "objectID": "index.html#handwriting-analysis-in-r",
+    "href": "index.html#handwriting-analysis-in-r",
+    "title": "Welcome",
+    "section": "",
+    "text": "Unlock the power of handwriting analysis with handwriter. This tool is designed to assist forensic examiners by analyzing handwritten documents. Whether you are a forensic document examiner, legal professional, academic, or simply curious about how statistics are applied to handwriting, handwriter provides an automated way to evaluate handwriting samples."
+  },
+  {
     "objectID": "index.html#get-started",
     "href": "index.html#get-started",
     "title": "Welcome",
@@ -100,49 +107,49 @@
   {
     "objectID": "learn-more/scenario1_model_card_summary.html",
     "href": "learn-more/scenario1_model_card_summary.html",
-    "title": "handwriter Open Set Method",
+    "title": "handwriter’s Open Set Method",
     "section": "",
-    "text": "Handwriter’s open set method compares two handwritten documents, generating a score-based likelihood ratio (SLR) that quantifies the strength of the evidence in favor of the documents being written by the same writer or different writers. It uses writer profiles based on graphical features extracted from handwriting samples. Handwriter was developed by Iowa State University’s Center for Statistics and Applications in Forensic Evidence.\nModel Version: 1.0.2.9000\nLicense: GPL-3\nQuick Start Guide: here\nSend questions or comments: csafe@iastate.edu"
+    "text": "Handwriter’s open set method compares two handwritten documents, generating a score-based likelihood ratio (SLR) that quantifies the strength of the evidence in favor of the documents being written by the same writer or different writers. It uses writer profiles based on graphical features extracted from handwriting samples. Handwriter was developed by Iowa State University’s Center for Statistics and Applications in Forensic Evidence.\nModel Version: handwriterRF 1.1.1\nLicense: GPL-3\nQuick Start Guide: here\nSend questions or comments: csafe@iastate.edu"
   },
   {
     "objectID": "learn-more/scenario1_model_card_summary.html#handwriting-sample-requirements",
     "href": "learn-more/scenario1_model_card_summary.html#handwriting-sample-requirements",
-    "title": "handwriter Open Set Method",
+    "title": "handwriter’s Open Set Method",
     "section": "Handwriting Sample Requirements",
     "text": "Handwriting Sample Requirements\n\nSamples should consist of 50+ words.\nSamples should be scanned with 300 DPI resolution and saved in PNG file format.\nSamples should be written in English. Model accuracy decreases for shorter samples and the model has not been evaluated for other languages."
   },
   {
     "objectID": "learn-more/scenario1_model_card_summary.html#interpreting-the-result",
     "href": "learn-more/scenario1_model_card_summary.html#interpreting-the-result",
-    "title": "handwriter Open Set Method",
+    "title": "handwriter’s Open Set Method",
     "section": "Interpreting the Result",
     "text": "Interpreting the Result\nAn SLR greater than one supports that the documents were written by the same person. An SLR of less than one supports that the documents were written by different people."
   },
   {
     "objectID": "learn-more/scenario1_model_card_summary.html#primary-intended-uses",
     "href": "learn-more/scenario1_model_card_summary.html#primary-intended-uses",
-    "title": "handwriter Open Set Method",
+    "title": "handwriter’s Open Set Method",
     "section": "Primary Intended Uses",
     "text": "Primary Intended Uses\n\nResearch: Use the software for academic or scientific research related to forensic handwriting analysis.\nTesting: Use the software for internal testing within forensic labs to evaluate its performance."
   },
   {
     "objectID": "learn-more/scenario1_model_card_summary.html#primary-intended-users",
     "href": "learn-more/scenario1_model_card_summary.html#primary-intended-users",
-    "title": "handwriter Open Set Method",
+    "title": "handwriter’s Open Set Method",
     "section": "Primary intended users",
     "text": "Primary intended users\n\nForensic document examiners, academic or scientific researchers"
   },
   {
     "objectID": "learn-more/scenario1_model_card_summary.html#accuracy-on-benchmark-datasets",
     "href": "learn-more/scenario1_model_card_summary.html#accuracy-on-benchmark-datasets",
-    "title": "handwriter Open Set Method",
+    "title": "handwriter’s Open Set Method",
     "section": "Accuracy on Benchmark Datasets",
     "text": "Accuracy on Benchmark Datasets\nModel evaluation was performed on 1,699 paragraph-length handwriting samples from 284 writers from the CSAFE Handwriting Database and the CVL Handwriting Database. In the case where the two handwriting samples were not copies of the same writing prompt, the false positive rate was 4.2% (23,637 false positives out of 566,282 ground truth negatives), and the false negative rate was 8.9% (159 false negatives out of 1,787 ground truth positives). For more results see Johnson et al. (2022)"
   },
   {
     "objectID": "learn-more/scenario1_model_card_summary.html#for-more-details",
     "href": "learn-more/scenario1_model_card_summary.html#for-more-details",
-    "title": "handwriter Open Set Method",
+    "title": "handwriter’s Open Set Method",
     "section": "For more details",
     "text": "For more details\nJohnson, M. Q., & Ommen, D. M. (2022). Handwriting identification using random forests and score‐based likelihood ratios. Statistical Analysis and Data Mining: The ASA Data Science Journal, 15(3), 357-375. https://doi.org/10.1002/sam.11566"
   },
