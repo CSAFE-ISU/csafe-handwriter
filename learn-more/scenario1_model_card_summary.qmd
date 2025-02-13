@@ -6,7 +6,7 @@ format: html
 
 Handwriter’s open set method compares two handwritten documents, generating a score-based likelihood ratio (SLR) that quantifies the strength of the evidence in favor of the documents being written by the same writer or different writers. It uses writer profiles based on graphical features extracted from handwriting samples. Handwriter was developed by Iowa State University's Center for Statistics and Applications in Forensic Evidence.
 
-**Model Version:** 1.0.2.9000
+**Model Version:** handwriterRF 1.1.1
 
 **License:** GPL-3
 
@@ -14,7 +14,7 @@ Handwriter’s open set method compares two handwritten documents, generating a 
 
 **Send questions or comments:** csafe\@iastate.edu
 
-## **Handwriting Sample Requirements**
+## Handwriting Sample Requirements
 
 -   Samples should consist of 50+ words.
 -   Samples should be scanned with 300 DPI resolution and saved in PNG file format.
