@@ -79,30 +79,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome",
+    "title": "Handwriting Analysis in R",
     "section": "",
-    "text": "Unlock the power of handwriting analysis with handwriter. This tool is designed to assist forensic examiners by analyzing handwritten documents. Whether you are a forensic document examiner, legal professional, academic, or simply curious about how statistics are applied to handwriting, handwriter provides an automated way to evaluate handwriting samples."
-  },
-  {
-    "objectID": "index.html#handwriting-analysis-in-r",
-    "href": "index.html#handwriting-analysis-in-r",
-    "title": "Welcome",
-    "section": "",
-    "text": "Unlock the power of handwriting analysis with handwriter. This tool is designed to assist forensic examiners by analyzing handwritten documents. Whether you are a forensic document examiner, legal professional, academic, or simply curious about how statistics are applied to handwriting, handwriter provides an automated way to evaluate handwriting samples."
-  },
-  {
-    "objectID": "index.html#get-started",
-    "href": "index.html#get-started",
-    "title": "Welcome",
-    "section": "Get Started",
-    "text": "Get Started"
-  },
-  {
-    "objectID": "index.html#learn-more",
-    "href": "index.html#learn-more",
-    "title": "Welcome",
-    "section": "Learn More",
-    "text": "Learn More\nhandwriter addresses two forensic scenarios."
+    "text": "Unlock the power of handwriting analysis with handwriter. This tool is designed to assist forensic examiners by analyzing handwritten documents. Whether you are a forensic document examiner, legal professional, academic, or simply curious about how statistics are applied to handwriting, handwriter provides an automated way to evaluate handwriting samples.\n\n\nGet Started\nGet started with the Quick Start Guide\n\n\n\n\n\n\n\nHandwriting Samples\nHandwriter takes scanned handwriting samples saved as PNG images. For best results, scan your samples at 300 DPI.\n\n\n\nA short handwriting sample\n\n\n\n\nHandwriting Samples\nHandwriter splits the scanned handwriting into component shapes called graphs. Graphs capture shapes, not necessarily individual letters. They might be a part of a letter or contain parts of multiple letters.\n\n\n\nA handwriting sample split into graphs\n\n\n\n\nLearn More\nhandwriter addresses two forensic scenarios."
   },
   {
     "objectID": "learn-more/scenario1_model_card_summary.html",

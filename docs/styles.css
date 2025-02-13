@@ -235,6 +235,11 @@ h6, .h6 {
  border-left-color: var(--blue);
 }
 
+/* Captions */
+.figure {
+  text-align: center;
+}
+
 /* Links */
 a:link {
  color: var(--orange);

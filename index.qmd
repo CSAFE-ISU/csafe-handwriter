@@ -1,26 +1,43 @@
 ---
-title: "Welcome"
+title: "Handwriting Analysis in R"
 format:
   html:
     code-tools: FALSE
     toc: false
-    page-layout: full
+    page-layout: full # makes content bands span page
 ---
 
-<div class="band-dark">
-## Handwriting Analysis in R
-
+<div class="band-light">
 Unlock the power of handwriting analysis with handwriter. This tool is designed to assist forensic examiners by analyzing handwritten documents. Whether you are a forensic document examiner, legal professional, academic, or simply curious about how statistics are applied to handwriting, handwriter provides an automated way to evaluate handwriting samples.
 </div>
 
-<div class="band-light">
-## Get Started
+<div class="band-dark">
+# Get Started
 
-[![](www/quick_start.png){fig-align="center"}](quick-start-guide.html)
+Get started with the [Quick Start Guide](quick-start-guide.html)
+
+[![](www/quick_start.png){fig-align="left"}](quick-start-guide.html)
+</div>
+
+<div class="band-light">
+# Handwriting Samples
+
+Handwriter takes scanned handwriting samples saved as PNG images. For best results, scan your samples at 300 DPI.
+
+![A short handwriting sample](www/sample.png){fig-align="center"}
 </div>
 
 <div class="band-dark">
-## Learn More
+# Common Handwriting Shapes
+
+Handwriter splits the scanned handwriting into component shapes called *graphs*. Graphs capture shapes, not necessarily individual letters. They might be a part of a letter or contain parts of multiple letters.
+
+![A handwriting sample split into graphs](www/sample_as_graphs.png){fig-align="center"}
+</div>
+
+
+<div class="band-light">
+# Learn More
 
 handwriter addresses two forensic scenarios.
 
