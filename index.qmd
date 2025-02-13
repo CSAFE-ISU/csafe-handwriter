@@ -7,36 +7,50 @@ format:
     page-layout: full # makes content bands span page
 ---
 
-<div class="band-light">
+::: band-light
 Unlock the power of handwriting analysis with handwriter. This tool is designed to assist forensic examiners by analyzing handwritten documents. Whether you are a forensic document examiner, legal professional, academic, or simply curious about how statistics are applied to handwriting, handwriter provides an automated way to evaluate handwriting samples.
-</div>
+:::
 
-<div class="band-dark">
+::: band-dark
 # Get Started
 
 Get started with the [Quick Start Guide](quick-start-guide.html)
 
 [![](www/quick_start.png){fig-align="left"}](quick-start-guide.html)
-</div>
+:::
 
-<div class="band-light">
+::: band-light
 # Handwriting Samples
 
 Handwriter takes scanned handwriting samples saved as PNG images. For best results, scan your samples at 300 DPI.
 
 ![A short handwriting sample](www/sample.png){fig-align="center"}
-</div>
+:::
 
-<div class="band-dark">
-# Common Handwriting Shapes
+::: band-dark
+# Viewing Shapes in Handwriting
 
 Handwriter splits the scanned handwriting into component shapes called *graphs*. Graphs capture shapes, not necessarily individual letters. They might be a part of a letter or contain parts of multiple letters.
 
 ![A handwriting sample split into graphs](www/sample_as_graphs.png){fig-align="center"}
-</div>
+:::
 
+::: band-light
+# Common Handwriting Shapes
 
-<div class="band-light">
+Handwriter analyzed handwriting samples from 100 writers, grouping the tens of thousands of graphs into 40 forty clusters of similar shapes with a K-Means clustering algorithm. The result is a *cluster template* of 40 exemplar handwriting shapes. These shapes might be part of a letter or contain parts of multiple letters. The cluster template is used to estimate writer profiles.
+
+![A Cluster Template](www/cluster_template.png)
+:::
+
+::: band-dark
+# Writer Profiles 
+Each graph in a handwriting sample is matched to its most similar shape in the cluster template. By counting how often a writer uses graphs from each cluster, handwriter creates a unique profile of their handwriting style. This profile shows the writer's tendency to form shapes in particular ways.
+
+![Writer Profiles from 2 Handwriting Samples in the CSAFE Handwriting Database](www/writer_profiles.png)
+:::
+
+:::: band-light
 # Learn More
 
 handwriter addresses two forensic scenarios.
@@ -46,4 +60,4 @@ handwriter addresses two forensic scenarios.
 
 ![](www/closed_set.png){fig-align="center"}
 :::
-</div>
+::::

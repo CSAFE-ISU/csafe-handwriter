@@ -171,13 +171,33 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </section>
-<section id="handwriting-samples-1" class="level1 band-dark">
-<h1>Handwriting Samples</h1>
+<section id="viewing-shapes-in-handwriting" class="level1 band-dark">
+<h1>Viewing Shapes in Handwriting</h1>
 <p>Handwriter splits the scanned handwriting into component shapes called <em>graphs</em>. Graphs capture shapes, not necessarily individual letters. They might be a part of a letter or contain parts of multiple letters.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="www/sample_as_graphs.png" class="img-fluid figure-img"></p>
 <figcaption>A handwriting sample split into graphs</figcaption>
+</figure>
+</div>
+</section>
+<section id="common-handwriting-shapes" class="level1 band-light">
+<h1>Common Handwriting Shapes</h1>
+<p>Handwriter analyzed handwriting samples from 100 writers, grouping the tens of thousands of graphs into 40 forty clusters of similar shapes with a K-Means clustering algorithm. The result is a <em>cluster template</em> of 40 exemplar handwriting shapes. These shapes might be part of a letter or contain parts of multiple letters. The cluster template is used to estimate writer profiles.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="www/cluster_template.png" class="img-fluid figure-img"></p>
+<figcaption>A Cluster Template</figcaption>
+</figure>
+</div>
+</section>
+<section id="writer-profiles" class="level1 band-dark">
+<h1>Writer Profiles</h1>
+<p>Each graph in a handwriting sample is matched to its most similar shape in the cluster template. By counting how often a writer uses graphs from each cluster, handwriter creates a unique profile of their handwriting style. This profile shows the writer’s tendency to form shapes in particular ways.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="www/writer_profiles.png" class="img-fluid figure-img"></p>
+<figcaption>Writer Profiles from 2 Handwriting Samples in the CSAFE Handwriting Database</figcaption>
 </figure>
 </div>
 </section>
