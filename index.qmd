@@ -7,7 +7,7 @@ format:
 ---
 
 ::: band-light
-# Handwriting Analysis
+# Welcome
 
 Unlock the power of handwriting analysis with handwriter. This tool is designed to assist forensic examiners by analyzing handwritten documents. Whether you are a forensic document examiner, legal professional, academic, or simply curious about how statistics are applied to handwriting, handwriter provides an automated way to evaluate handwriting samples.
 :::
@@ -78,7 +78,7 @@ Each graph in a handwriting sample is matched to its most similar shape in the c
 ::: text-content-66
 ## Scenario 1
 
-In this scenario, a document examiner has two handwritten documents. They might know who wrote one of the documents, or they might not know who wrote either document. The examiner wants to know whether the documents were written by the same person. We call this scenario the *open set problem*. [Learn more](learn-more.html)
+In this scenario, a document examiner has two handwritten documents. They might know who wrote one of the documents, or they might not know who wrote either document. The examiner wants to know whether the documents were written by the same person. We call this scenario the *open set problem*.
 :::
 ::::
 
@@ -89,9 +89,25 @@ In this scenario, a document examiner has two handwritten documents. They might 
 ::: text-content-66
 ## Scenario 2
 
-In this scenario, a document examiner has a handwriting document from an unknown writer and a *closed set* of potential writers, where the document must have been written by one of the potential writers. For example, if a handwritten threat letter is found in a prison, the closed-set of potential writers is people who had access to the prison. We call this scenario the *closed set problem*. [Learn more](learn-more.html)
+In this scenario, a document examiner has a handwritten document from an unknown writer and a *closed set* of potential writers, where the document must have been written by one of the potential writers. For example, if a handwritten threat letter is found in a prison, the closed-set of potential writers is people who had access to the prison. We call this scenario the *closed set problem*. 
 :::
 ::::
 
+Get started with the [Quick Start Guide](quick-start-guide.html) or [learn more](learn-more.html) about the methods.
 :::::
 
+::: band-dark
+### Center for Statistics and Applications in Forensic Evidence
+
+195 Durham Center
+
+613 Morrill Road
+
+Ames, Iowa 50011
+
+\(515\) 294-7278
+
+csafe@iastate.edu
+
+[https://forensicstats.org/](https://forensicstats.org/)
+:::

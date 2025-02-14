@@ -221,14 +221,14 @@
     "href": "index.html#scenario-1",
     "title": "Handwriting Analysis",
     "section": "Scenario 1",
-    "text": "Scenario 1\nIn this scenario, a document examiner has two handwritten documents. They might know who wrote one of the documents, or they might not know who wrote either document. The examiner wants to know whether the documents were written by the same person. We call this scenario the open set problem. Learn more"
+    "text": "Scenario 1\nIn this scenario, a document examiner has two handwritten documents. They might know who wrote one of the documents, or they might not know who wrote either document. The examiner wants to know whether the documents were written by the same person. We call this scenario the open set problem."
   },
   {
     "objectID": "index.html#scenario-2",
     "href": "index.html#scenario-2",
     "title": "Handwriting Analysis",
     "section": "Scenario 2",
-    "text": "Scenario 2\nIn this scenario, a document examiner has a handwriting document from an unknown writer and a closed set of potential writers, where the document must have been written by one of the potential writers. For example, if a handwritten threat letter is found in a prison, the closed-set of potential writers is people who had access to the prison. We call this scenario the closed set problem. Learn more"
+    "text": "Scenario 2\nIn this scenario, a document examiner has a handwritten document from an unknown writer and a closed set of potential writers, where the document must have been written by one of the potential writers. For example, if a handwritten threat letter is found in a prison, the closed-set of potential writers is people who had access to the prison. We call this scenario the closed set problem."
   },
   {
     "objectID": "learn-more.html",
