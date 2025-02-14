@@ -139,6 +139,49 @@
   padding: 0 1rem;
 }
 
+/* Add to your existing band styles */
+.flex-container {
+  max-width: 1200px;  /* Match your site's max-width */
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 50%;
+}
+
+.text-content-66 {
+  flex: 1;
+  min-width: 66%;
+}
+
+.text-content-75 {
+  flex: 1;
+  min-width: 75%;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  
+  .text-content,
+  .image-content {
+    width: 100%;
+  }
+}
+
 body {
  margin: 0;
  padding: 0;

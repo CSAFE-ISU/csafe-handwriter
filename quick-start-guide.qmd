@@ -1,4 +1,4 @@
-![](www/quick_start.png){width=300px}
+![](www/quick_start.png){width="300px"}
 
 # Quick Start Guide
 

@@ -137,78 +137,105 @@ ul.task-list li input[type="checkbox"] {
 <h1>Handwriting Analysis</h1>
 <p>Unlock the power of handwriting analysis with handwriter. This tool is designed to assist forensic examiners by analyzing handwritten documents. Whether you are a forensic document examiner, legal professional, academic, or simply curious about how statistics are applied to handwriting, handwriter provides an automated way to evaluate handwriting samples.</p>
 </section>
-<section id="get-started" class="level1 band-dark">
-<h1>Get Started</h1>
-<p>Get started with the <a href="quick-start-guide.html">Quick Start Guide</a></p>
-<div class="quarto-figure quarto-figure-left">
+<div class="band-dark">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="quick-start-guide.html"><img src="www/quick_start.png" class="img-fluid quarto-figure quarto-figure-left figure-img"></a></p>
+<p><img src="www/quick_start.png" class="img-fluid figure-img"></p>
+<figcaption>Get started with the <a href="quick-start-guide.html">Quick Start Guide</a></figcaption>
 </figure>
 </div>
-</section>
-<section id="handwriting-samples" class="level1 band-light">
+</div>
+<div class="band-light">
+<div class="flex-container">
+<section id="handwriting-samples" class="level1 text-content">
 <h1>Handwriting Samples</h1>
 <p>Handwriter takes scanned handwriting samples saved as PNG images. For best results, scan your samples at 300 DPI.</p>
+</section>
+<div class="image-content">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="www/sample.png" class="img-fluid figure-img"></p>
 <figcaption>A short handwriting sample</figcaption>
 </figure>
 </div>
-</section>
-<section id="viewing-shapes-in-handwriting" class="level1 band-dark">
-<h1>Viewing Shapes in Handwriting</h1>
-<p>Handwriter splits the scanned handwriting into component shapes called <em>graphs</em>. Graphs capture shapes, not necessarily individual letters. They might be a part of a letter or contain parts of multiple letters.</p>
+</div>
+</div>
+</div>
+<div class="band-dark">
+<div class="flex-container">
+<div class="image-content">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="www/sample_as_graphs.png" class="img-fluid figure-img"></p>
 <figcaption>A handwriting sample split into graphs</figcaption>
 </figure>
 </div>
+</div>
+<section id="viewing-shapes-in-handwriting" class="level1 text-content">
+<h1>Viewing Shapes in Handwriting</h1>
+<p>Handwriter splits the scanned handwriting into component shapes called <em>graphs</em>. Graphs capture shapes, not necessarily individual letters. They might be a part of a letter or contain parts of multiple letters.</p>
 </section>
-<section id="common-handwriting-shapes" class="level1 band-light">
+</div>
+</div>
+<div class="band-light">
+<div class="flex-container">
+<section id="common-handwriting-shapes" class="level1 text-content">
 <h1>Common Handwriting Shapes</h1>
 <p>Handwriter analyzed handwriting samples from 100 writers, grouping the tens of thousands of graphs into 40 forty clusters of similar shapes with a K-Means clustering algorithm. The result is a <em>cluster template</em> of 40 exemplar handwriting shapes. These shapes might be part of a letter or contain parts of multiple letters. The cluster template is used to estimate writer profiles.</p>
+</section>
+<div class="image-content">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="www/cluster_template.png" class="img-fluid figure-img"></p>
 <figcaption>A cluster template</figcaption>
 </figure>
 </div>
-</section>
-<section id="writer-profiles" class="level1 band-dark">
-<h1>Writer Profiles</h1>
-<p>Each graph in a handwriting sample is matched to its most similar shape in the cluster template. By counting how often a writer uses graphs from each cluster, handwriter creates a profile of a writer’s handwriting style. This profile shows the writer’s tendency to form shapes in particular ways.</p>
+</div>
+</div>
+</div>
+<div class="band-dark">
+<div class="flex-container">
+<div class="image-content">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="www/writer_profiles.png" class="img-fluid figure-img"></p>
 <figcaption>Writer profiles from two handwriting samples in the CSAFE Handwriting Database</figcaption>
 </figure>
 </div>
+</div>
+<section id="writer-profiles" class="level1 text-content">
+<h1>Writer Profiles</h1>
+<p>Each graph in a handwriting sample is matched to its most similar shape in the cluster template. By counting how often a writer uses graphs from each cluster, handwriter creates a profile of a writer’s handwriting style. This profile shows the writer’s tendency to form shapes in particular ways.</p>
 </section>
+</div>
+</div>
 <section id="which-scenario-fits-your-data" class="level1 band-light">
 <h1>Which Scenario Fits Your Data?</h1>
-<p>Handwriter addresses two forensic scenarios. Which Scenario fits your data?</p>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="flex-container">
+<div class="image-content">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="www/open_set.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<section id="scenario-1" class="level2 text-content-66">
+<h2 class="anchored" data-anchor-id="scenario-1">Scenario 1</h2>
+<p>In this scenario, a document examiner has two handwritten documents. They might know who wrote one of the documents, or they might not know who wrote either document. The examiner wants to know whether the documents were written by the same person. We call this scenario the <em>open set problem</em>. <a href="learn-more.html">Learn more</a></p>
+</section>
+</div>
+<div class="flex-container">
+<div class="image-content">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="www/closed_set.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 </div>
-</div>
+<section id="scenario-2" class="level2 text-content-66">
+<h2 class="anchored" data-anchor-id="scenario-2">Scenario 2</h2>
+<p>In this scenario, a document examiner has a handwriting document from an unknown writer and a <em>closed set</em> of potential writers, where the document must have been written by one of the potential writers. For example, if a handwritten threat letter is found in a prison, the closed-set of potential writers is people who had access to the prison. We call this scenario the <em>closed set problem</em>. <a href="learn-more.html">Learn more</a></p>
+</section>
 </div>
 </section>
 
