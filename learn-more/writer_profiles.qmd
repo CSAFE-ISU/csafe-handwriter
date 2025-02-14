@@ -1,0 +1,39 @@
+---
+title: "Learn How Handwriter Constructs Writer Profiles"
+format:
+  html:
+    code-tools: FALSE
+    toc: TRUE
+    page-layout: full # makes content bands span page
+---
+
+Handwriter constructs writer profiles from handwriting samples.
+
+## Handwriting Samples
+
+Handwriter takes scanned handwriting samples saved as PNG images. For best results, scan your samples at 300 DPI.
+
+![A short handwriting sample](../www/sample.png){fig-align="center"}
+
+
+## Handwriting as Shapes
+
+Handwriter splits the scanned handwriting into component shapes called *graphs*. Graphs capture shapes, not necessarily individual letters. They might be a part of a letter or contain parts of multiple letters.
+
+![A handwriting sample split into graphs](../www/sample_as_graphs.png){fig-align="center"}
+
+
+## Common Handwriting Shapes
+
+Handwriter analyzed handwriting samples from 100 writers, grouping the tens of thousands of graphs into 40 forty clusters of similar shapes with a K-Means clustering algorithm. The result is a *cluster template* of 40 exemplar handwriting shapes. These shapes might be part of a letter or contain parts of multiple letters. The cluster template is used to estimate writer profiles.
+
+![A cluster template](../www/cluster_template.png){fig-align="center"}
+
+## Writer Profiles
+
+Each graph in a handwriting sample is matched to its most similar shape in the cluster template. By counting how often a writer uses graphs from each cluster, handwriter creates a profile of a writer's handwriting style. This profile shows the writer's tendency to form shapes in particular ways.
+
+![Writer profiles from two handwriting samples in the CSAFE Handwriting Database](../www/writer_profiles.png){fig-align="center"}
+
+## How Does Handwriter Compare Writer Profiles?
+
