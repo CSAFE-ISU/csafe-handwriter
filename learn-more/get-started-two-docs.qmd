@@ -1,0 +1,14 @@
+---
+title: "Get Started Comparing Two Documents"
+format: html
+---
+
+## When to Use Scenario 1
+
+![Scenario 1](../www/open_set.png){fig-align="center" width="50%"}
+
+### Examples
+
+## Requirements
+
+## Limitations

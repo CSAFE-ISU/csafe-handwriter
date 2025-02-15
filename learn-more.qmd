@@ -4,12 +4,8 @@ toc: FALSE
 code-tools: FALSE
 ---
 
-[Learn How Handwriter Constructs Writer Profiles](learn-more/writer_profiles.html)
-
-## Scenario 1 - The Open Set Problem
-
--   [Scenario 1 - Executive Summary](learn-more/scenario1_model_card_summary.html)
--   [An Intro to the SLR Method](learn-more/introduction-to-slr-model.html)
--   [Train a New SLR Model](learn-more/training-slr-model.html)
-
-## Scenario 2 - The Closed Set Problem
+[Learn How Handwriter Constructs Writer Profiles](learn-more/writer_profiles_overview.html)
+[Get Started Comparing Two Documents](get-started-two-docs.html)
+[Scenario 1 - Executive Summary](learn-more/scenario1_model_card_summary.html)
+[An Intro to the SLR Method](learn-more/introduction-to-slr-model.html)
+[Train a New SLR Model](learn-more/training-slr-model.html)
