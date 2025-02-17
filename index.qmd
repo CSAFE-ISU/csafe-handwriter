@@ -13,88 +13,94 @@ Unlock the power of handwriting analysis with handwriter. This tool is designed 
 :::
 
 ::: band-dark
-![Get started with the [Quick Start Guide](quick-start-guide.html)](www/quick_start.png)
+![Get started with the [Quick Start Guide](get-started/quick-start-guide.html).](www/quick_start.png)
 :::
 
-::::: band-light
-:::: flex-container
+:::::: band-light
+::::: flex-container
 ::: text-content
 # Handwriting Samples
 
 Handwriter takes scanned handwriting samples saved as PNG images. For best results, scan your samples at 300 DPI.
 :::
+
 ::: image-content
 ![A short handwriting sample](www/sample.png){fig-align="center"}
 :::
-::::
 :::::
+::::::
 
-::::: band-dark
-:::: flex-container
+:::::: band-dark
+::::: flex-container
 ::: image-content
 ![A handwriting sample split into graphs](www/sample_as_graphs.png){fig-align="center"}
 :::
+
 ::: text-content
 # Viewing Shapes in Handwriting
 
 Handwriter splits the scanned handwriting into component shapes called *graphs*. Graphs capture shapes, not necessarily individual letters. They might be a part of a letter or contain parts of multiple letters.
 :::
-::::
 :::::
+::::::
 
-::::: band-light
-:::: flex-container
+:::::: band-light
+::::: flex-container
 ::: text-content
 # Common Handwriting Shapes
 
 Handwriter analyzed handwriting samples from 100 writers, grouping the tens of thousands of graphs into 40 forty clusters of similar shapes with a K-Means clustering algorithm. The result is a *cluster template* of 40 exemplar handwriting shapes. These shapes might be part of a letter or contain parts of multiple letters. The cluster template is used to estimate writer profiles.
 :::
+
 ::: image-content
 ![A cluster template](www/cluster_template.png)
 :::
-::::
 :::::
+::::::
 
-::::: band-dark
-:::: flex-container
+:::::: band-dark
+::::: flex-container
 ::: image-content
 ![Writer profiles from two handwriting samples in the CSAFE Handwriting Database](www/writer_profiles.png)
 :::
+
 ::: text-content
 # Writer Profiles
 
 Each graph in a handwriting sample is matched to its most similar shape in the cluster template. By counting how often a writer uses graphs from each cluster, handwriter creates a profile of a writer's handwriting style. This profile shows the writer's tendency to form shapes in particular ways.
 :::
-::::
 :::::
+::::::
 
-::::: band-light
-# Which Scenario Fits Your Data?
+::::::::: band-light
+# Which Path Suits Your Data?
 
-:::: flex-container
+::::: flex-container
 ::: image-content
 ![](www/open_set.png){fig-align="center"}
 :::
+
 ::: text-content-66
-## Scenario 1
+## Path 1 - Compare Two Documents
 
-In this scenario, a document examiner has two handwritten documents. They might know who wrote one of the documents, or they might not know who wrote either document. The examiner wants to know whether the documents were written by the same person. We call this scenario the *open set problem*.
+A document examiner has two handwritten documents. They might know who wrote one of the documents, or they might not know who wrote either document. The examiner wants to know whether the documents were written by the same person.
 :::
-::::
+:::::
 
-:::: flex-container
+::::: flex-container
 ::: image-content
 ![](www/closed_set.png){fig-align="center"}
 :::
+
 ::: text-content-66
-## Scenario 2
+## Path 2 - Compare a QD to Known Writing Samples
 
-In this scenario, a document examiner has a handwritten document from an unknown writer and a *closed set* of potential writers, where the document must have been written by one of the potential writers. For example, if a handwritten threat letter is found in a prison, the closed-set of potential writers is people who had access to the prison. We call this scenario the *closed set problem*. 
+A document examiner has a handwritten document from an unknown writer and a *closed set* of potential writers, where the document must have been written by one of the potential writers. For example, if a handwritten threat letter is found in a prison, the closed-set of potential writers is people who had access to the prison.
 :::
-::::
-
-Get started with the [Quick Start Guide](quick-start-guide.html) or [learn more](learn-more.html) about the methods.
 :::::
+
+[Get started](get-started.html) or [learn more](learn-more.html) about the methods.
+:::::::::
 
 ::: band-dark
 ### Center for Statistics and Applications in Forensic Evidence
@@ -107,7 +113,7 @@ Ames, Iowa 50011
 
 \(515\) 294-7278
 
-csafe@iastate.edu
+csafe\@iastate.edu
 
-[https://forensicstats.org/](https://forensicstats.org/)
+<https://forensicstats.org/>
 :::

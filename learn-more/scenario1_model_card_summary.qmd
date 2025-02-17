@@ -10,7 +10,7 @@ Handwriter’s open set method compares two handwritten documents, generating a 
 
 **License:** GPL-3
 
-**Quick Start Guide:** [here](../quick-start-guide.html)
+**Quick Start Guide:** [here](../get-started/quick-start-guide.html)
 
 **Send questions or comments:** csafe\@iastate.edu
 

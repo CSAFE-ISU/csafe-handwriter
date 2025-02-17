@@ -9,8 +9,8 @@ website:
     left:
       - text: Home
         file: index.qmd
-      - text: "Quick Start Guide"
-        file: quick-start-guide.qmd
+      - text: "Get Started"
+        file: get-started.qmd
       - text: "Learn More"
         file: learn-more.qmd
       - text: "Permitted Use"
