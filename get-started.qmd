@@ -4,5 +4,18 @@ toc: FALSE
 code-tools: FALSE
 ---
 
-[Quick Start Guide](get-started/quick-start-guide.html) 
+- [Quick Start Guide](get-started/quick-start-guide.html) 
+- [Preparing Handwritng Samples](get-started/prepare-samples.html)
+- [Choosing a Path](get-started/choose-path.html)
 
+## Path 1 - Comparing Two Documents
+
+- [Compare Two Documents with the App](get-started/two-docs-app.html)
+- [Compare Two Documents in R](get-started/two-docs-r.html)
+- [How to Interpret the Results](get-started/two-docs-results.html)
+
+## Path 2 - Compare a Questioned Document to Known Handwriting Samples
+
+- [Compare a QD to Known Samples with the App](get-started/qd-known-app.html)
+- [Compare a QD to Known Samples in R](get-started/qd-known-r.html)
+- [How to Interpret the Results](get-started/qd-known-results.html)

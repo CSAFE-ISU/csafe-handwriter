@@ -1,0 +1,30 @@
+---
+title: "Which Scenario Fits Your Samples?"
+format: html
+---
+
+Handwriter uses two statistical methods and each method addresses a particular scenario.
+
+::::: flex-container
+::: image-content
+![](../www/open_set.png){fig-align="center"}
+:::
+
+::: text-content-66
+## Scenario 1 - Compare Two Documents
+
+A document examiner has two handwritten documents. They might know who wrote one of the documents, or they might not know who wrote either document. The examiner wants to know whether the documents were written by the same person.
+:::
+:::::
+
+::::: flex-container
+::: image-content
+![](../www/closed_set.png){fig-align="center"}
+:::
+
+::: text-content-66
+## Scenario 2 - Compare a QD to Known Writing Samples
+
+A document examiner has a handwritten document from an unknown writer and a *closed set* of potential writers, where the document must have been written by one of the potential writers. For example, if a handwritten threat letter is found in a prison, the closed-set of potential writers is people who had access to the prison.
+:::
+:::::

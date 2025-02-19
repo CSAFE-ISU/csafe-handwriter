@@ -73,7 +73,7 @@ Each graph in a handwriting sample is matched to its most similar shape in the c
 ::::::
 
 ::::::::: band-light
-# Which Path Suits Your Data?
+# Which Scenario Fits Your Handwriting Samples?
 
 ::::: flex-container
 ::: image-content
