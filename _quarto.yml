@@ -10,9 +10,9 @@ website:
       - text: Home
         file: index.qmd
       - text: "Get Started"
-        file: get-started.qmd
+        file: get-started/index.qmd
       - text: "Learn More"
-        file: learn-more.qmd
+        file: learn-more/index.qmd
       - text: "Permitted Use"
         file: permitted-use.qmd
       - text: Contact
