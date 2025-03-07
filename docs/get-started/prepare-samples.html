@@ -196,18 +196,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="best-practices-for-handwriter">Best Practices for Handwriter</h2>
 <p>When using Handwriter to analyze handwriting samples, follow these guidelines:</p>
 <ol type="1">
-<li><p><strong>Scan Resolution</strong>: Always scan handwriting samples at 300 DPI resolution.</p></li>
+<li><p><strong>Scan Resolution</strong>: Always scan handwriting samples at 300 DPI resolution. If a handwriting sample was scanned at higher resolution, use photo editing software like Adobe Photoshop to reduce the resolution to 300 DPI.</p></li>
 <li><p><strong>File Format</strong>: Save scans directly as PNG images.</p>
 <ul>
 <li>If your scanner doesn’t support PNG format, save as TIFF first, then convert to PNG using software like Adobe Photoshop.</li>
 </ul></li>
-<li><p><strong>Lined Paper</strong>: The current version of handwriter has only been tested on white, unlined paper. If your handwriting samples are on lined paper, remove the lines using software like Adobe Photoshop.</p></li>
+<li><p><strong>Lined Paper</strong>: The current version of handwriter has only been tested on white, unlined paper. If your handwriting samples are on lined paper, remove the lines using photo editing software like Adobe Photoshop.</p></li>
 </ol>
 </section>
 <section id="known-limitations" class="level2">
 <h2 class="anchored" data-anchor-id="known-limitations">Known Limitations</h2>
 <ol type="1">
 <li><p><strong>Document Length</strong>: Tests of handwriter on benchmark datasets show that its accuracy decreases as the amount of the handwriting decreases. The best results occur when handwriting samples are at least a paragraph in length, and the accuracy decreases for shorter samples.</p></li>
+<li><p><strong>Light-colored inks and pencil</strong>: Handwriter might not be able to recognize handwriting in light-colored inks or pencil.</p></li>
 <li><p><strong>Resolution Issues</strong>:</p>
 <ul>
 <li>Using scan resolution lower than 300 DPI significantly decreases comparison accuracy</li>
@@ -707,26 +708,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>When using Handwriter to analyze handwriting samples, follow these guidelines:</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Scan Resolution**: Always scan handwriting samples at 300 DPI resolution.</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>**Scan Resolution**: Always scan handwriting samples at 300 DPI resolution. If a handwriting sample was scanned at higher resolution, use photo editing software like Adobe Photoshop to reduce the resolution to 300 DPI.</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**File Format**: Save scans directly as PNG images.</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>If your scanner doesn't support PNG format, save as TIFF first, then convert to PNG using software like Adobe Photoshop.</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Lined Paper**: The current version of handwriter has only been tested on  white, unlined paper. If your handwriting samples are on lined paper, remove the lines using software like Adobe Photoshop.</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Known Limitations</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Document Length**: Tests of handwriter on benchmark datasets show that its accuracy decreases as the amount of the handwriting decreases. The best results occur when handwriting samples are at least a paragraph in length, and the accuracy decreases for shorter samples.</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Resolution Issues**:</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Using scan resolution lower than 300 DPI significantly decreases comparison accuracy</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Comparing samples scanned at different resolutions reduces reliability</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Format Conversion Problems**:</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Scanning handwriting as PDF and then converting to PNG can degrade writing quality</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>This degradation directly impacts analysis accuracy</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>   </span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Signatures**: Handwriter is not intended for use on signatures.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>**File Format**: Save scans directly as PNG images.</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>If your scanner doesn't support PNG format, save as TIFF first, then convert to PNG using software like Adobe Photoshop.</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>**Lined Paper**: The current version of handwriter has only been tested on white, unlined paper. If your handwriting samples are on lined paper, remove the lines using photo editing software like Adobe Photoshop.</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">## Known Limitations</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>**Document Length**: Tests of handwriter on benchmark datasets show that its accuracy decreases as the amount of the handwriting decreases. The best results occur when handwriting samples are at least a paragraph in length, and the accuracy decreases for shorter samples.</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Light-colored inks and pencil**: Handwriter might not be able to recognize handwriting in light-colored inks or pencil. </span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>**Resolution Issues**:</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Using scan resolution lower than 300 DPI significantly decreases comparison accuracy</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Comparing samples scanned at different resolutions reduces reliability</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>**Format Conversion Problems**:</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Scanning handwriting as PDF and then converting to PNG can degrade writing quality</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>This degradation directly impacts analysis accuracy</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">5.  </span>**Signatures**: Handwriter is not intended for use on signatures.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

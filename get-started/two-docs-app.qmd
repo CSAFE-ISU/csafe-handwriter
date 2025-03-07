@@ -1,6 +1,6 @@
 ---
-title: "Preparing Handwriting Samples"
+title: "Compare Two Documents in the handwriter App"
 format: html
 ---
 
-Coming soon...
+

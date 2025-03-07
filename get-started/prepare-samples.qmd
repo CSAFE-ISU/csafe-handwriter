@@ -7,24 +7,28 @@ format: html
 
 When using Handwriter to analyze handwriting samples, follow these guidelines:
 
-1. **Scan Resolution**: Always scan handwriting samples at 300 DPI resolution.
+1.  **Scan Resolution**: Always scan handwriting samples at 300 DPI resolution. If a handwriting sample was scanned at higher resolution, use photo editing software like Adobe Photoshop to reduce the resolution to 300 DPI.
 
-2. **File Format**: Save scans directly as PNG images.
-   - If your scanner doesn't support PNG format, save as TIFF first, then convert to PNG using software like Adobe Photoshop.
+2.  **File Format**: Save scans directly as PNG images.
 
-3. **Lined Paper**: The current version of handwriter has only been tested on  white, unlined paper. If your handwriting samples are on lined paper, remove the lines using software like Adobe Photoshop.
+    -   If your scanner doesn't support PNG format, save as TIFF first, then convert to PNG using software like Adobe Photoshop.
+
+3.  **Lined Paper**: The current version of handwriter has only been tested on white, unlined paper. If your handwriting samples are on lined paper, remove the lines using photo editing software like Adobe Photoshop.
 
 ## Known Limitations
 
-1. **Document Length**: Tests of handwriter on benchmark datasets show that its accuracy decreases as the amount of the handwriting decreases. The best results occur when handwriting samples are at least a paragraph in length, and the accuracy decreases for shorter samples.
+1.  **Document Length**: Tests of handwriter on benchmark datasets show that its accuracy decreases as the amount of the handwriting decreases. The best results occur when handwriting samples are at least a paragraph in length, and the accuracy decreases for shorter samples.
 
-2. **Resolution Issues**:
-   - Using scan resolution lower than 300 DPI significantly decreases comparison accuracy
-   - Comparing samples scanned at different resolutions reduces reliability
+2. **Light-colored inks and pencil**: Handwriter might not be able to recognize handwriting in light-colored inks or pencil. 
 
-3. **Format Conversion Problems**:
-   - Scanning handwriting as PDF and then converting to PNG can degrade writing quality
-   - This degradation directly impacts analysis accuracy
-   
-4. **Signatures**: Handwriter is not intended for use on signatures.
+3.  **Resolution Issues**:
 
+    -   Using scan resolution lower than 300 DPI significantly decreases comparison accuracy
+    -   Comparing samples scanned at different resolutions reduces reliability
+
+4.  **Format Conversion Problems**:
+
+    -   Scanning handwriting as PDF and then converting to PNG can degrade writing quality
+    -   This degradation directly impacts analysis accuracy
+
+5.  **Signatures**: Handwriter is not intended for use on signatures.
